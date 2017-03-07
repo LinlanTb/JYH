@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import "base";
+$width:1200px;
+$color:#dc0f50;
+$fontSize:14px;
+.active{
+    color:$color;
+}
+section{
+    width:100%;position:relative;
+    hr{
+        position:absolute;
+        top:40px;
+        width:100%;
+        border:1px solid $color;
+    }
+}
+.section{
+    width:$width;
+    margin:0 auto;
+    //导航nav
+    nav{
+        width:$width;
+        height:40px;
+        dt{
+            float:left;
+            background:#333;
+            width:234px;
+            height:40px;
+            font-size:$fontSize;
+            color:#fff;
+            line-height:40px;
+            text-align:center;
+            margin-right:20px;
+        }
+        dd{
+            float:left;
+            margin:0 15px; 
+            line-height:40px;
+            font-size:$fontSize;   
+        }
+    }
+    //轮播图部分
+    .banner{
+        width:$width;
+        height:562px;
+        //左边菜单
+        .list{
+            width:232px;
+            height:560px;
+            border:1px solid #ccc;
+            float:left;
+            a{
+                display:block;
+                height:40px;
+                text-align:center;
+                line-height:40px;
+                font-size: $fontSize;color:#666;
+                &:hover{
+                    background:$color;
+                }
+            }
+        }
+        //中间轮播图部分
+        .turnPic{
+            float:left;
+            width:714px;
+            height:561px;
+            margin:0 5px;
+            .turns{
+                width:714px;
+                height:382px;
+            }
+            .pic{
+                margin-top:5px;
+                height:175px;
+                img{
+                    width:353px;height:175px;
+                }
+                img:first-child{
+                    margin-right:4px;
+                }
+            }
+        }
+        //右边联系方式等
+        .login{
+            width:232px;
+            height:561px;
+            float:right;
+            .perlist{
+                margin:10px 0;
+                width:230px;
+                height:324px;
+                border:1px solid #bbb;
+                .hd{
+                    width:200px;
+                    height:150px;
+                    padding:15px;
+                    border-bottom:1px solid #bbb;
+                    text-align:center;
+                    #sub{
+                        display:block;
+                        width:200px;
+                        height:40px;
+                        background:$color;
+                        font-size:16px;
+                        color:#fff;
+                        text-align:center;
+                        line-height:40px;
+                        margin:10px 0;
+                    }
+                    #reg{
+                        float:right;
+                        color:#666;
+                    }
+                }
+                .conv{
+                    width:210px;
+                    height:123px;
+                    padding:10px;
+                    p{
+                        padding:10px 10px 10px 30px;
+                        font-size:24px;
+                        font-weight:bold;
+                        margin-bottom:10px;
+                        background:url(../img/minimg/mobile1.png) no-repeat left center;
+                    }
+                    a{
+                        display:block;
+                        float:left;
+                        text-align:center;
+                        padding:0 5px;
+                        width:42px;
+                        line-height:15px;
+                        height:55px;
+                        color:#666;
+                        i{
+                            display:block;
+                            width:26px;
+                            height:20px;
+                            margin:0 10px 5px;
+                        }
+                    }
+                    #zb i{
+                        background:url(../img/minimg/icon_2.png) 0 0;
+                    }
+                    #zs i{
+                        background:url(../img/minimg/icon_2.png) 0 -20px;
+                    }
+                    #wl i{
+                        background:url(../img/minimg/icon_2.png) 0 -40px;
+                    }
+                    #hy i{
+                        background:url(../img/minimg/icon_2.png) 0 -60px;
+                    }
+                    #zb:hover i{
+                        background:url(../img/minimg/icon_2.png) -28px 0;
+                    }
+                    #zs:hover i{
+                        background:url(../img/minimg/icon_2.png) -28px -20px;
+                    }
+                    #wl:hover i{
+                        background:url(../img/minimg/icon_2.png) -28px -40px;
+                    }
+                    #hy:hover i{
+                        background:url(../img/minimg/icon_2.png) -28px -60px;
+                    }
+                }
+            }
+            .goods{
+                width:230px;height:215px;
+                border-top:2px solid $color;
+                h2{
+                    width:210px;
+                    height:30px;
+                    padding:10px;
+                    line-height:20px;
+                    text-align:center;
+                    font-size:16px;
+                    color:$color;
+                }
+                a{
+                    display:block;
+                    float:left;
+                    width:113px;
+                    height:151px;
+                    margin-left:2px;
+                    img{
+                        width:113px;
+                        height:113px;
+                    }
+                    i{
+                        display:block;
+                        width:113px;
+                        height:30px;
+                        line-height:30px;
+                        margin-top:10px;
+                        background:$color;
+                        color:#fff;
+                        text-align:center;
+                       
+                    }
+                }
+            }
+        }
+    }
+}

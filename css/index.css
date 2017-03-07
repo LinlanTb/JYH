@@ -1,0 +1,191 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+.active {
+  color: #dc0f50; }
+
+section {
+  width: 100%;
+  position: relative; }
+  section hr {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    border: 1px solid #dc0f50; }
+
+.section {
+  width: 1200px;
+  margin: 0 auto; }
+  .section nav {
+    width: 1200px;
+    height: 40px; }
+    .section nav dt {
+      float: left;
+      background: #333;
+      width: 234px;
+      height: 40px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      margin-right: 20px; }
+    .section nav dd {
+      float: left;
+      margin: 0 15px;
+      line-height: 40px;
+      font-size: 14px; }
+  .section .banner {
+    width: 1200px;
+    height: 562px; }
+    .section .banner .list {
+      width: 232px;
+      height: 560px;
+      border: 1px solid #ccc;
+      float: left; }
+      .section .banner .list a {
+        display: block;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 14px;
+        color: #666; }
+        .section .banner .list a:hover {
+          background: #dc0f50; }
+    .section .banner .turnPic {
+      float: left;
+      width: 714px;
+      height: 561px;
+      margin: 0 5px; }
+      .section .banner .turnPic .turns {
+        width: 714px;
+        height: 382px; }
+      .section .banner .turnPic .pic {
+        margin-top: 5px;
+        height: 175px; }
+        .section .banner .turnPic .pic img {
+          width: 353px;
+          height: 175px; }
+        .section .banner .turnPic .pic img:first-child {
+          margin-right: 4px; }
+    .section .banner .login {
+      width: 232px;
+      height: 561px;
+      float: right; }
+      .section .banner .login .perlist {
+        margin: 10px 0;
+        width: 230px;
+        height: 324px;
+        border: 1px solid #bbb; }
+        .section .banner .login .perlist .hd {
+          width: 200px;
+          height: 150px;
+          padding: 15px;
+          border-bottom: 1px solid #bbb;
+          text-align: center; }
+          .section .banner .login .perlist .hd #sub {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background: #dc0f50;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            margin: 10px 0; }
+          .section .banner .login .perlist .hd #reg {
+            float: right;
+            color: #666; }
+        .section .banner .login .perlist .conv {
+          width: 210px;
+          height: 123px;
+          padding: 10px; }
+          .section .banner .login .perlist .conv p {
+            padding: 10px 10px 10px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: url(../img/minimg/mobile1.png) no-repeat left center; }
+          .section .banner .login .perlist .conv a {
+            display: block;
+            float: left;
+            text-align: center;
+            padding: 0 5px;
+            width: 42px;
+            line-height: 15px;
+            height: 55px;
+            color: #666; }
+            .section .banner .login .perlist .conv a i {
+              display: block;
+              width: 26px;
+              height: 20px;
+              margin: 0 10px 5px; }
+          .section .banner .login .perlist .conv #zb i {
+            background: url(../img/minimg/icon_2.png) 0 0; }
+          .section .banner .login .perlist .conv #zs i {
+            background: url(../img/minimg/icon_2.png) 0 -20px; }
+          .section .banner .login .perlist .conv #wl i {
+            background: url(../img/minimg/icon_2.png) 0 -40px; }
+          .section .banner .login .perlist .conv #hy i {
+            background: url(../img/minimg/icon_2.png) 0 -60px; }
+          .section .banner .login .perlist .conv #zb:hover i {
+            background: url(../img/minimg/icon_2.png) -28px 0; }
+          .section .banner .login .perlist .conv #zs:hover i {
+            background: url(../img/minimg/icon_2.png) -28px -20px; }
+          .section .banner .login .perlist .conv #wl:hover i {
+            background: url(../img/minimg/icon_2.png) -28px -40px; }
+          .section .banner .login .perlist .conv #hy:hover i {
+            background: url(../img/minimg/icon_2.png) -28px -60px; }
+      .section .banner .login .goods {
+        width: 230px;
+        height: 215px;
+        border-top: 2px solid #dc0f50; }
+        .section .banner .login .goods h2 {
+          width: 210px;
+          height: 30px;
+          padding: 10px;
+          line-height: 20px;
+          text-align: center;
+          font-size: 16px;
+          color: #dc0f50; }
+        .section .banner .login .goods a {
+          display: block;
+          float: left;
+          width: 113px;
+          height: 151px;
+          margin-left: 2px; }
+          .section .banner .login .goods a img {
+            width: 113px;
+            height: 113px; }
+          .section .banner .login .goods a i {
+            display: block;
+            width: 113px;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 10px;
+            background: #dc0f50;
+            color: #fff;
+            text-align: center; }
+
+/*# sourceMappingURL=index.css.map */

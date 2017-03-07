@@ -11,10 +11,14 @@ ul, li, ol {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
 
 img {
-  border: none; }
+  border: none;
+  padding: 0;
+  margin: 0; }
 
 i, em {
   font-style: normal; }

@@ -4,17 +4,102 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<link href="img/tb.ico" type="image/x-icon" rel="icon"  />
-		<link href="css/css.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<header>
-			<div class="header"></div>
-		</header>
+		<!--头部-->
+		<header></header>
+		<!--中间部分-->
 		<section>
-			<div class="section"></div>
+			<hr/>
+			<div class="section">
+				<!--导航-->
+				<nav>
+					<dl>
+						<dt>全部商品分类</dt>
+						<dd class="active">首页</dd>
+						<dd>TV直播</dd>
+						<dd>品牌惠</dd>
+						<dd>惠家有APP</dd>
+						<dd>加油尊享</dd>
+						<dd>家有优藏</dd>
+					</dl>
+				</nav>
+				<div class="banner">
+					<div class="list">
+						<a href="###">海外购</a>
+						<a href="###">生活电器</a>
+						<a href="###">品质厨房</a>
+						<a href="###">厨房电器</a>
+						<a href="###">生活家居</a>
+						<a href="###">布艺家纺</a>
+						<a href="###">服装服饰</a>
+						<a href="###">箱包配饰</a>
+						<a href="###">美妆个护</a>
+						<a href="###">食品饮料</a>
+						<a href="###">运动健康</a>
+						<a href="###">3C数码</a>
+						<a href="###">宠物用品</a>
+					</div>
+					<div class="turnPic">
+						<div class="turns"></div>
+						<div class="pic">
+							<img src="img/pic/tvqc.jpg"/>
+							<img src="img/pic/yztop.jpg"/>
+						</div>
+					</div>
+					<div class="login">
+						<div class="perlist">
+							<div class="hd">
+								<img src="img/do_07.png"  />
+								<p>hi!欢迎来到惠家有</p>
+								<a href="###" id="sub">登录</a>
+								<a href="###" id="reg">免费注册</a>
+							</div>
+							<div class="conv">
+								<p>4008-678-210</p>
+								<a href="###" id="zb">
+									<i></i>
+									直播节目表
+								</a>
+								<a href="###" id="zs">
+									<i></i>
+									掌上购物
+								</a>
+								<a href="###" id="wl">
+									<i></i>
+									物流查询
+								</a>
+								<a href="###" id="hy">
+									<i></i>
+									会员中心
+								</a>
+							</div>
+						</div>
+						<div class="goods">
+							<h2>今日秒杀 10/20 点准时开抢</h2>
+							<a href="###">
+								<img src="img/tod.jpg" />
+								<i>立即抢购</i>
+							</a>
+							<a href="###">
+								<img src="img/tomo.jpg" />
+								<i>立即抢购</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<!--footer部分-->
 		<footer>
-			<div class="footer"></div>
 		</footer>
 	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script>
+		$(function(){
+			//引入头部
+			$("header").load("top.html");
+		});
+	</script>
 </html>

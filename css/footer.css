@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+footer {
+  width: 100%;
+  height: 370px; }
+
+#footer {
+  width: 1200px;
+  height: 370px;
+  margin: 0 auto; }
+  #footer ul {
+    width: 1200px;
+    height: 54px;
+    margin: 20px 20px 45px; }
+    #footer ul li {
+      float: left;
+      padding: 0 15px 0 85px;
+      height: 54px;
+      border-right: 1px solid #ccc; }
+      #footer ul li em {
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 5px; }
+      #footer ul li i {
+        display: block;
+        line-height: 18px;
+        padding-top: 5px;
+        color: #999; }
+    #footer ul li:nth-child(1) {
+      background: url(../img/minimg/warrant_icon.png) no-repeat 15px 0; }
+    #footer ul li:nth-child(2) {
+      background: url(../img/minimg/warrant_icon.png) no-repeat 15px -54px; }
+    #footer ul li:nth-child(3) {
+      background: url(../img/minimg/warrant_icon.png) no-repeat 15px -108px; }
+    #footer ul li:nth-child(4) {
+      background: url(../img/minimg/warrant_icon.png) no-repeat 15px -163px; }
+    #footer ul li:nth-child(5) {
+      background: url(../img/minimg/warrant_icon.png) no-repeat 15px -218px;
+      border: none; }
+  #footer .foot {
+    width: 1200px;
+    height: 151px; }
+    #footer .foot .foot-list {
+      width: 900px;
+      height: 151px;
+      float: left;
+      padding-left: 20px; }
+      #footer .foot .foot-list dl {
+        float: left;
+        margin: 0 40px;
+        text-align: center; }
+        #footer .foot .foot-list dl dt a {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 30px; }
+          #footer .foot .foot-list dl dt a:hover {
+            color: #dc0f50; }
+        #footer .foot .foot-list dl dd a {
+          line-height: 20px;
+          color: #999; }
+          #footer .foot .foot-list dl dd a:hover {
+            color: #dc0f50; }
+    #footer .foot #foot-ro {
+      float: left;
+      width: 260px;
+      height: 151px; }
+      #footer .foot #foot-ro ul li {
+        width: 80px;
+        height: 104px;
+        background: none; }
+        #footer .foot #foot-ro ul li img {
+          width: 80px;
+          height: 80px; }
+
+/*# sourceMappingURL=footer.css.map */

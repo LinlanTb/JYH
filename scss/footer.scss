@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "base";
+$width:1200px;
+$color:#dc0f50;
+footer{
+    width:100%;
+    height:370px;
+}
+#footer{
+    width:$width;
+    height:370px;
+    margin:0 auto;
+    ul{
+        width:$width;
+        height:54px;
+        margin:20px 20px 45px;
+        li{
+            float:left;
+            padding: 0 15px 0 85px;
+            height:54px;
+            border-right:1px solid #ccc;
+            em{
+                display:block;
+                font-size:16px;
+                line-height:22px;
+                padding-top:5px;
+            }
+            i{
+                display:block;
+                line-height:18px;
+                padding-top:5px;
+                color:#999;
+            }
+        }
+        li:nth-child(1){
+            background:url(../img/minimg/warrant_icon.png) no-repeat 15px 0;
+        }
+        li:nth-child(2){
+            background:url(../img/minimg/warrant_icon.png) no-repeat 15px -54px;
+        }
+        li:nth-child(3){
+            background:url(../img/minimg/warrant_icon.png) no-repeat 15px -108px;
+        }
+        li:nth-child(4){
+            background:url(../img/minimg/warrant_icon.png) no-repeat 15px -163px;
+        }
+        li:nth-child(5){
+            background:url(../img/minimg/warrant_icon.png) no-repeat 15px -218px;
+            border:none;
+        }
+    }
+    .foot{
+        width:$width;
+        height:151px;
+        .foot-list{
+            width:900px;
+            height:151px;
+            float:left;
+            padding-left:20px;
+            dl{
+                float:left;
+                margin:0 40px;
+                text-align:center;
+                dt a{
+                    font-size:16px;
+                    font-weight:bold;
+                    line-height:30px;
+                    &:hover{
+                        color:$color;
+                    }
+                }
+                dd a{
+                    line-height:20px;
+                    color:#999;
+                    &:hover{
+                        color:$color;
+                    }
+                }
+            }
+        }
+        #foot-ro{
+            float:left;
+            width:260px;
+            height:151px;
+            ul li{
+                width:80px;
+                height:104px;
+                background:none;
+                img{
+                    width:80px;
+                    height:80px;
+                }
+            }
+        }
+    }
+}
