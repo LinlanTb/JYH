@@ -4,16 +4,16 @@ $width:1200px;
 $color:#dc0f50;
 footer{
     width:100%;
-    height:370px;
+    height:342px;
 }
-#footer{
+#footer-top{
     width:$width;
-    height:370px;
+    height:270px;
     margin:0 auto;
     ul{
         width:$width;
         height:54px;
-        margin:20px 20px 45px;
+        margin:20px 20px 35px;
         li{
             float:left;
             padding: 0 15px 0 85px;
@@ -70,6 +70,8 @@ footer{
                     }
                 }
                 dd a{
+                    display:block;
+                    height:20px;
                     line-height:20px;
                     color:#999;
                     &:hover{
@@ -80,17 +82,58 @@ footer{
         }
         #foot-ro{
             float:left;
-            width:260px;
+            width:210px;
             height:151px;
-            ul li{
-                width:80px;
+            ul {
+                width:210px;
                 height:104px;
-                background:none;
-                img{
+                margin:0;
+                li{
                     width:80px;
-                    height:80px;
+                    height:104px;
+                    background:none;
+                    padding:0;
+                    border:none;
+                    text-align:center;
+                    font-weight:bold;
+                    margin-right:20px;
+                    img{
+                        width:80px;
+                        height:80px;
+                    }
                 }
             }
+            p{
+                margin-top:10px;
+                width:210px;
+                height:37px;
+                padding-left:40px;
+                background:url(../img/minimg/mobile.png) no-repeat left center;
+                em{
+                    display:block;
+                    font-weight:bold;
+                    font-size:20px;
+                }
+                i{
+                    display:block;
+                    line-height:14px;
+                }
+            }
+        }
+    }
+}
+.foof{
+    width:100%;
+    height:72px;
+    background:#333;
+    .footf{
+        width:$width;
+        height:52px;
+        padding:10px 0;
+        margin:0 auto;
+        background:#333;
+        p a:hover{
+            color:#fff;
         }
     }
 }

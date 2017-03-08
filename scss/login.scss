@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import "base";
+$color:#dc0f50;
+section{
+    width:100%;
+    height:540px;
+    border-top:2px solid $color;
+}
+.con{
+    width:1060px;
+    height:450px;
+    margin:0 auto;
+    padding:60px 70px 30px 70px;
+    .dim{
+        width:448px;
+        height:336px;
+        padding-top:40px;
+        float:left;
+        img{
+            width:448px;
+            height:340px;
+        }
+    }
+    
+    .login{
+        width:448px;
+        height:376px;
+        float:right;
+        .fr{
+            width:448px;
+            height:40px;
+            a{
+                display:block;
+                width:50%;
+                height:40px;
+                float:left;
+                i{
+                    margin:0 76px;
+                    display:block;
+                    font-size:18px;
+                    width:72px;
+                    line-height:38px;
+                }
+                &:hover i{
+                    color:$color;
+                    border-bottom:2px solid $color;
+                }
+            }
+        }
+        .first{
+            width:306px;
+            height:295px;
+            display:none;
+            border:1px solid #bbb;
+            margin-top:-1px;
+            padding:45px 70px 0 70px;
+            li{
+                width:306px;
+                height:40px;
+                margin-bottom:20px;
+                outline:none;
+                input{
+                    width:265px;
+                    height:40px;
+                    padding-left:40px;
+                }
+                #check{
+                    width:13px;
+                    height:13px;
+                }
+                #log{
+                    float:right;
+                }
+                a:hover{
+                    color:$color;
+                }
+                #sub{
+                    display:block;
+                    width:306px;
+                    height:40px;
+                    background:$color;
+                    font-size:18px;
+                    color:#fff;
+                    text-align:center;
+                    line-height:40px;
+                    font-weight:bold;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+        //first结束
+        .quik{
+            width:306px;
+            height:330px;
+            border:1px solid #bbb;
+            margin-top:-1px;
+            padding:10px 70px 0 70px;
+            p{
+                width:276px;
+                height:40px;
+                padding-left:30px;
+                line-height:40px;
+                color:$color;
+                background:url(../img/ling.png) no-repeat 5px center;
+            }
+            li{
+                width:306px;
+                height:40px;
+                margin-bottom:20px;
+                input{
+                    width:265px;
+                    height:40px;
+                    outline:none;
+                    padding-left:40px;
+                }
+                #check{
+                    width:13px;
+                    height:13px;
+                }
+                #log{
+                    float:right;
+                }
+                a:hover{
+                    color:$color;
+                }
+                #sub{
+                    display:block;
+                    width:306px;
+                    height:40px;
+                    background:$color;
+                    font-size:18px;
+                    color:#fff;
+                    text-align:center;
+                    line-height:40px;
+                    font-weight:bold;
+                    letter-spacing: 5px;
+                }
+            }
+            li:nth-child(4){
+                margin-bottom:0;
+            }
+        }
+    }
+}

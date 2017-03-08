@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/login.css" rel="stylesheet" type="text/css" />	</head>
+	<body>
+		<header></header>
+		<section>
+			<div class="con">
+				<div class="dim">
+					<a href="http://www.jyh.com/APP.html" target="_blank">
+						<img src="img/login1.jpg" />
+					</a>
+				</div>
+				<div class="login">
+					<div class="fr">
+						<a href="###"><i>用户登录</i></a>
+						<a href="###"><i>快捷登录</i></a>
+					</div>
+					<div class="first">
+						<ul>
+							<li><input type="text" id="txt" placeholder="请输入11位有效手机号"/></li>
+							<li><input type="password" id="pwd" placeholder="请输入密码" /></li>
+							<li>
+								<label><input type="checkbox" id="check" />下次自动登录 </label>
+								<a href="http://www.jyh.com/IndexMain.html?u=FindPassword" id="reset"> 重置密码</a>
+								<a href="###" id="log">新用户注册</a>
+							</li>
+							<li><a href="###" id="sub">登录</a></li>
+						</ul>
+					</div>
+					<div class="quik">
+						<p>电视激活用户由此登录</p>
+						<span>请保持你的手机畅通，用于接收验证码短信</span>
+						<ul>
+							<li><input type="text" id="txt" placeholder="请输入11位有效手机号"/></li>
+							<li><input type="password" id="pwd1" placeholder="请输入图片验证码"/></li>
+							<li><input type="password" id="pwd2" placeholder="请输入验证码"/></li>
+							<li>
+								<label><input type="checkbox" id="check" />下次自动登录 </label>
+								<a href="http://www.jyh.com/IndexMain.html?u=FindPassword" id="reset"> 重置密码</a>
+								<a href="###" id="log">新用户注册</a>
+							</li>
+							<li><a href="###" id="sub">登录</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+	<script src="js/jquery-1.8.3.min.js" ></script>
+	<script>
+		$(function(){
+			$("header").load("top.html");
+			$("footer").load("footer.html");
+		});
+	</script>
+</html>

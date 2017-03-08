@@ -50,15 +50,19 @@ section {
       color: #fff;
       line-height: 40px;
       text-align: center;
-      margin-right: 20px; }
-    .section nav dd {
+      margin-right: 20px;
+      cursor: pointer; }
+    .section nav dd a {
       float: left;
       margin: 0 15px;
       line-height: 40px;
       font-size: 14px; }
+      .section nav dd a:hover {
+        color: #dc0f50; }
   .section .banner {
     width: 1200px;
-    height: 562px; }
+    height: 562px;
+    margin-bottom: 30px; }
     .section .banner .list {
       width: 232px;
       height: 560px;
@@ -78,9 +82,12 @@ section {
       width: 714px;
       height: 561px;
       margin: 0 5px; }
-      .section .banner .turnPic .turns {
+      .section .banner .turnPic #turns {
         width: 714px;
-        height: 382px; }
+        height: 382px;
+        margin-top: 3px;
+        overflow: hidden;
+        position: relative; }
       .section .banner .turnPic .pic {
         margin-top: 5px;
         height: 175px; }
@@ -122,7 +129,7 @@ section {
           height: 123px;
           padding: 10px; }
           .section .banner .login .perlist .conv p {
-            padding: 10px 10px 10px 30px;
+            padding: 10px 5px 10px 35px;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -187,5 +194,339 @@ section {
             background: #dc0f50;
             color: #fff;
             text-align: center; }
+  .section .good-list {
+    width: 1200px;
+    height: 362px;
+    margin-bottom: 30px; }
+    .section .good-list .hd {
+      width: 1200px;
+      height: 32px;
+      margin-bottom: 30px;
+      position: relative; }
+      .section .good-list .hd h2 {
+        position: absolute;
+        left: 0;
+        height: 26px;
+        padding: 4px 5px;
+        background: #fff;
+        font-size: 24px;
+        color: #333; }
+      .section .good-list .hd .line {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid #ccc; }
+    .section .good-list #glists {
+      width: 1200px;
+      height: 300px;
+      position: relative;
+      overflow: hidden; }
+      .section .good-list #glists ul {
+        min-width: 9999px;
+        height: 298px;
+        margin: 0 20px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .section .good-list #glists ul li {
+          float: left;
+          width: 200px;
+          margin: 0 25px 0 10px; }
+          .section .good-list #glists ul li img {
+            width: 200px;
+            height: 200px; }
+          .section .good-list #glists ul li p {
+            width: 200px;
+            height: 24px;
+            position: relative;
+            margin-top: -24px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: #fff; }
+          .section .good-list #glists ul li span {
+            width: 190px;
+            padding: 5px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+            display: block;
+            overflow: hidden; }
+          .section .good-list #glists ul li i {
+            display: block;
+            font-size: 20px;
+            color: #dc0f50; }
+            .section .good-list #glists ul li i em {
+              color: #666;
+              padding: 0 10px;
+              font-size: 12px;
+              text-decoration: line-through; }
+      .section .good-list #glists #prev, .section .good-list #glists #next {
+        width: 30px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 60px; }
+      .section .good-list #glists #prev {
+        left: 0; }
+      .section .good-list #glists #next {
+        right: 0; }
+  .section .time-list {
+    width: 1200px;
+    height: 362px;
+    margin-bottom: 30px; }
+    .section .time-list .hd {
+      width: 1200px;
+      height: 32px;
+      margin-bottom: 30px;
+      position: relative; }
+      .section .time-list .hd h2 {
+        position: absolute;
+        left: 0;
+        height: 26px;
+        padding: 4px 5px;
+        background: #fff;
+        font-size: 24px;
+        color: #333; }
+        .section .time-list .hd h2 span {
+          font-size: 14px;
+          font-weight: 400; }
+          .section .time-list .hd h2 span i {
+            padding: 3px 5px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            margin: 0 3px; }
+      .section .time-list .hd .line {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid #ccc; }
+    .section .time-list #glists {
+      width: 1200px;
+      height: 300px;
+      position: relative;
+      overflow: hidden; }
+      .section .time-list #glists ul {
+        min-width: 9999px;
+        height: 298px;
+        margin: 0 20px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .section .time-list #glists ul li {
+          float: left;
+          width: 200px;
+          margin: 0 25px 0 10px;
+          position: relative; }
+          .section .time-list #glists ul li img {
+            width: 200px;
+            height: 200px; }
+          .section .time-list #glists ul li p {
+            width: 50px;
+            height: 28px;
+            position: absolute;
+            top: 172px;
+            right: 0;
+            background: #dc6c8f;
+            text-align: center;
+            color: #fff; }
+          .section .time-list #glists ul li span {
+            width: 130px;
+            padding: 5px 55px 5px 5px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+            display: block;
+            overflow: hidden; }
+          .section .time-list #glists ul li i {
+            width: 130px;
+            display: block;
+            font-size: 20px;
+            padding: 5px 55px 5px 5px;
+            color: #dc0f50; }
+            .section .time-list #glists ul li i em {
+              color: #666;
+              padding: 0 10px;
+              font-size: 12px;
+              text-decoration: line-through; }
+          .section .time-list #glists ul li b {
+            width: 40px;
+            height: 48px;
+            display: block;
+            position: absolute;
+            top: 210px;
+            right: 0;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            background: #ea2e2f; }
+      .section .time-list #glists #prev, .section .time-list #glists #next {
+        width: 30px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 60px; }
+      .section .time-list #glists #prev {
+        left: 0; }
+      .section .time-list #glists #next {
+        right: 0; }
+  .section .like-list {
+    width: 1200px;
+    height: 362px;
+    margin-bottom: 30px; }
+    .section .like-list .hd {
+      width: 1200px;
+      height: 32px;
+      margin-bottom: 30px; }
+      .section .like-list .hd h2 {
+        left: 0;
+        height: 26px;
+        padding: 4px 5px;
+        background: #fff;
+        font-size: 24px;
+        color: #333; }
+    .section .like-list #glists {
+      width: 1200px;
+      height: 300px;
+      position: relative;
+      overflow: hidden; }
+      .section .like-list #glists ul {
+        min-width: 9999px;
+        height: 298px;
+        margin: 0 20px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .section .like-list #glists ul li {
+          float: left;
+          width: 200px;
+          margin: 0 25px 0 10px;
+          position: relative; }
+          .section .like-list #glists ul li img {
+            width: 200px;
+            height: 200px; }
+          .section .like-list #glists ul li span {
+            width: 130px;
+            padding: 5px 55px 5px 5px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+            display: block;
+            overflow: hidden; }
+          .section .like-list #glists ul li i {
+            width: 130px;
+            display: block;
+            font-size: 20px;
+            padding: 5px 55px 5px 5px;
+            color: #dc0f50; }
+            .section .like-list #glists ul li i em {
+              color: #666;
+              padding: 0 10px;
+              font-size: 12px;
+              text-decoration: line-through; }
+      .section .like-list #glists #prev, .section .like-list #glists #next {
+        width: 30px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 60px; }
+      .section .like-list #glists #prev {
+        left: 0; }
+      .section .like-list #glists #next {
+        right: 0; }
+  .section .floor {
+    width: 1200px;
+    height: 556px;
+    margin-bottom: 30px; }
+    .section .floor h2 {
+      margin-bottom: 25px; }
+    .section .floor .floor-left {
+      width: 890px;
+      height: 556px;
+      margin-right: 10px;
+      float: left; }
+      .section .floor .floor-left .left {
+        width: 300px;
+        height: 514px;
+        float: left; }
+        .section .floor .floor-left .left img {
+          width: 300px;
+          height: 376px; }
+        .section .floor .floor-left .left p {
+          width: 300px;
+          height: 108px;
+          margin-top: 20px;
+          text-align: center; }
+          .section .floor .floor-left .left p img {
+            width: 80px;
+            height: 30px;
+            margin: 5px;
+            border: 1px solid #bbb; }
+      .section .floor .floor-left .right {
+        width: 580px;
+        height: 514px;
+        float: left;
+        margin-left: 10px; }
+        .section .floor .floor-left .right #turnimg {
+          width: 580px;
+          height: 310px;
+          overflow: hidden;
+          position: relative; }
+    .section .floor .floor-right {
+      width: 300px;
+      height: 556px;
+      float: right; }
+      .section .floor .floor-right dl {
+        width: 300px;
+        height: 80px;
+        padding: 10px 0;
+        border-bottom: 1px solid #bbb; }
+        .section .floor .floor-right dl dt {
+          float: left;
+          width: 80px;
+          height: 80px;
+          margin-right: 15px;
+          position: relative; }
+          .section .floor .floor-right dl dt img {
+            width: 80px;
+            height: 80px; }
+          .section .floor .floor-right dl dt span {
+            display: block;
+            width: 24px;
+            height: 19px;
+            color: #fff;
+            padding: 3px 5px;
+            line-height: 12px;
+            background: url(../img/biao_bg.png) no-repeat 0 0;
+            position: absolute;
+            top: 10px;
+            left: 0; }
+        .section .floor .floor-right dl dd {
+          float: left;
+          width: 205px; }
+          .section .floor .floor-right dl dd i {
+            display: block;
+            height: 32px;
+            line-height: 16px;
+            margin-bottom: 20px; }
+          .section .floor .floor-right dl dd em {
+            display: block;
+            font-size: 20px;
+            color: #dc0f50; }
 
 /*# sourceMappingURL=index.css.map */

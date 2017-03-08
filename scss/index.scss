@@ -32,18 +32,23 @@ section{
             line-height:40px;
             text-align:center;
             margin-right:20px;
+            cursor:pointer;
         }
-        dd{
+        dd a{
             float:left;
             margin:0 15px; 
             line-height:40px;
-            font-size:$fontSize;   
+            font-size:$fontSize;  
+            &:hover{
+                color:$color;
+            } 
         }
     }
     //轮播图部分
     .banner{
         width:$width;
         height:562px;
+        margin-bottom:30px;
         //左边菜单
         .list{
             width:232px;
@@ -67,9 +72,12 @@ section{
             width:714px;
             height:561px;
             margin:0 5px;
-            .turns{
+            #turns{
                 width:714px;
                 height:382px;
+                margin-top:3px;
+                overflow:hidden;
+                position:relative;
             }
             .pic{
                 margin-top:5px;
@@ -119,7 +127,7 @@ section{
                     height:123px;
                     padding:10px;
                     p{
-                        padding:10px 10px 10px 30px;
+                        padding:10px 5px 10px 35px;
                         font-size:24px;
                         font-weight:bold;
                         margin-bottom:10px;
@@ -199,6 +207,416 @@ section{
                         color:#fff;
                         text-align:center;
                        
+                    }
+                }
+            }
+        }
+    }
+    //banner结束
+    .good-list{
+        width:$width;
+        height:362px;
+        margin-bottom:30px;
+        //标题
+        .hd{
+            width:$width;
+            height:32px;
+            margin-bottom:30px;
+            position:relative;
+            h2{
+                position:absolute;
+                left:0;
+                height:26px;
+                padding:4px 5px;
+                background:#fff;
+                font-size:24px;
+                color:#333;
+            }
+            .line{
+                width:100%;
+                height:30px;
+                border-bottom:1px solid #ccc;
+            }
+            
+        }
+        //商品
+        #glists{
+            width:$width;
+            height:300px;
+            position:relative;
+            overflow: hidden;
+            ul{
+                min-width:9999px;
+                height: 298px;
+                margin:0 20px;
+                position:absolute;
+                left:0;top:0;
+                li{
+                    float:left;
+                    width:200px;
+                    margin:0 25px 0 10px;
+                    img{
+                        width:200px;
+                        height:200px;
+                    }
+                    p{
+                        width:200px;
+                        height:24px;
+                        position:relative;
+                        margin-top:-24px;
+                        background:rgba(0,0,0,0.6);
+                        text-align:center;
+                        color:#fff;
+                    }
+                    span{
+                       width:190px;
+                       padding:5px;
+                       height:34px;
+                       font-size:14px;
+                       line-height:18px;
+                       color:#333;
+                       display:block;
+                       overflow:hidden;
+                    }
+                    i{
+                        display:block;
+                        font-size:20px;
+                        color:$color;
+                        em{
+                            color:#666;
+                            padding:0 10px;
+                            font-size:12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+            #prev,#next{
+                width:30px;
+                height:60px;
+                font-size:30px;
+                color:#fff;
+                display:block;
+                line-height:60px;
+                text-align: center;
+                background:rgba(0,0,0,0.6);
+                position:absolute;
+                top:60px;
+            }
+            #prev{
+                left:0;
+                
+            }
+            #next{
+                right:0;
+            }
+        }
+      
+    }  //tv直播结束
+    .time-list{
+        width:$width;
+        height:362px;
+        margin-bottom:30px;
+        //标题
+        .hd{
+            width:$width;
+            height:32px;
+            margin-bottom:30px;
+            position:relative;
+            h2{
+                position:absolute;
+                left:0;
+                height:26px;
+                padding:4px 5px;
+                background:#fff;
+                font-size:24px;
+                color:#333;
+                span{
+                    font-size:14px;
+                    font-weight:400;
+                    i{
+                        padding:3px 5px;
+                        background:rgba(0,0,0,0.8);
+                        color:#fff;
+                        margin:0 3px;
+                    }
+                }
+            }
+            .line{
+                width:100%;
+                height:30px;
+                border-bottom:1px solid #ccc;
+            }
+            
+        }
+        //商品
+        #glists{
+            width:$width;
+            height:300px;
+            position:relative;
+            overflow: hidden;
+            ul{
+                min-width:9999px;
+                height: 298px;
+                margin:0 20px;
+                position:absolute;
+                left:0;top:0;
+                li{
+                    float:left;
+                    width:200px;
+                    margin:0 25px 0 10px;
+                    position:relative;
+                    img{
+                        width:200px;
+                        height:200px;
+                        
+                    }
+                    p{
+                        width:50px;
+                        height:28px;
+                        position:absolute;
+                        top:172px;
+                        right:0;
+                        background:#dc6c8f;
+                        text-align:center;
+                        color:#fff;
+                    }
+                    span{
+                       width:130px;
+                       padding:5px 55px 5px 5px;
+                       height:34px;
+                       font-size:14px;
+                       line-height:18px;
+                       color:#333;
+                       display:block;
+                       overflow:hidden;
+                    }
+                    i{
+                        width:130px;
+                        display:block;
+                        font-size:20px;
+                        padding:5px 55px 5px 5px;
+                        color:$color;
+                        em{
+                            color:#666;
+                            padding:0 10px;
+                            font-size:12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                    b{
+                        width:40px;
+                        height:48px;
+                        display:block;
+                        position:absolute;
+                        top:210px;
+                        right:0;
+                        text-align:center;
+                        font-size:16px;
+                        color:#fff;
+                        background:#ea2e2f;
+                    }
+                }
+            }
+            #prev,#next{
+                width:30px;
+                height:60px;
+                font-size:30px;
+                color:#fff;
+                display:block;
+                line-height:60px;
+                text-align: center;
+                background:rgba(0,0,0,0.6);
+                position:absolute;
+                top:60px;
+            }
+            #prev{
+                left:0;
+                
+            }
+            #next{
+                right:0;
+            }
+        }
+        
+    }//限时抢购结束
+    .like-list{
+        width:$width;
+        height:362px;
+        margin-bottom:30px;
+        //标题
+        .hd{
+            width:$width;
+            height:32px;
+            margin-bottom:30px;
+            h2{
+                left:0;
+                height:26px;
+                padding:4px 5px;
+                background:#fff;
+                font-size:24px;
+                color:#333;
+            }
+        }
+        //商品
+        #glists{
+            width:$width;
+            height:300px;
+            position:relative;
+            overflow: hidden;
+            ul{
+                min-width:9999px;
+                height: 298px;
+                margin:0 20px;
+                position:absolute;
+                left:0;top:0;
+                li{
+                    float:left;
+                    width:200px;
+                    margin:0 25px 0 10px;
+                    position:relative;
+                    img{
+                        width:200px;
+                        height:200px;
+                        
+                    }
+                    span{
+                       width:130px;
+                       padding:5px 55px 5px 5px;
+                       height:34px;
+                       font-size:14px;
+                       line-height:18px;
+                       color:#333;
+                       display:block;
+                       overflow:hidden;
+                    }
+                    i{
+                        width:130px;
+                        display:block;
+                        font-size:20px;
+                        padding:5px 55px 5px 5px;
+                        color:$color;
+                        em{
+                            color:#666;
+                            padding:0 10px;
+                            font-size:12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+            #prev,#next{
+                width:30px;
+                height:60px;
+                font-size:30px;
+                color:#fff;
+                display:block;
+                line-height:60px;
+                text-align: center;
+                background:rgba(0,0,0,0.6);
+                position:absolute;
+                top:60px;
+            }
+            #prev{
+                left:0;
+                
+            }
+            #next{
+                right:0;
+            }
+        }
+        
+    }//猜你喜欢结束
+    
+    .floor{
+        width:$width;
+        height:556px;
+        margin-bottom:30px;
+        h2{
+            margin-bottom:25px;
+        }
+        .floor-left{
+            width:890px;
+            height:556px;
+            margin-right:10px;
+            float:left;
+            .left{//left开始
+                width:300px;
+                height:514px;
+                float:left;
+                img{
+                    width:300px;
+                    height:376px;
+                }
+                p{
+                    width:300px;
+                    height:108px;
+                    margin-top:20px;
+                    text-align:center;
+                    img{
+                        width:80px;
+                        height:30px;
+                        margin:5px;
+                        border:1px solid #bbb;
+                    }
+                }
+            }//left结束
+            .right{
+                width:580px;
+                height:514px;
+                float:left;
+                margin-left:10px;
+                #turnimg{
+                    width:580px;
+                    height:310px;
+                    overflow:hidden;
+                    position:relative;
+                }
+            }
+        }
+        .floor-right{
+            width:300px;
+            height:556px;
+            float:right;
+            dl{
+                width:300px;
+                height:80px;
+                padding:10px 0;
+                border-bottom:1px solid #bbb;
+                dt{
+                    float:left;
+                    width:80px;height:80px;
+                    margin-right:15px;
+                    position:relative;
+                    img{
+                        width:80px;
+                        height:80px;
+                    }
+                    span{
+                        display:block;
+                        width:24px;
+                        height:19px;
+                        color:#fff;
+                        padding:3px 5px;line-height:12px;
+                        background:url(../img/biao_bg.png) no-repeat 0 0;
+                        position:absolute;
+                        top:10px;
+                        left:0;
+                    }
+                }
+                dd{
+                    float:left;
+                    width:205px;
+                    i{
+                        display:block;
+                        height:32px;
+                        line-height:16px;
+                        margin-bottom:20px;
+                    }
+                    em{
+                        display:block;
+                        font-size:20px;
+                        color:$color;
                     }
                 }
             }

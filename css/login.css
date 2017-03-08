@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+section {
+  width: 100%;
+  height: 540px;
+  border-top: 2px solid #dc0f50; }
+
+.con {
+  width: 1060px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 60px 70px 30px 70px; }
+  .con .dim {
+    width: 448px;
+    height: 336px;
+    padding-top: 40px;
+    float: left; }
+    .con .dim img {
+      width: 448px;
+      height: 340px; }
+  .con .login {
+    width: 448px;
+    height: 376px;
+    float: right; }
+    .con .login .fr {
+      width: 448px;
+      height: 40px; }
+      .con .login .fr a {
+        display: block;
+        width: 50%;
+        height: 40px;
+        float: left; }
+        .con .login .fr a i {
+          margin: 0 76px;
+          display: block;
+          font-size: 18px;
+          width: 72px;
+          line-height: 38px; }
+        .con .login .fr a:hover i {
+          color: #dc0f50;
+          border-bottom: 2px solid #dc0f50; }
+    .con .login .first {
+      width: 306px;
+      height: 295px;
+      display: none;
+      border: 1px solid #bbb;
+      margin-top: -1px;
+      padding: 45px 70px 0 70px; }
+      .con .login .first li {
+        width: 306px;
+        height: 40px;
+        margin-bottom: 20px;
+        outline: none; }
+        .con .login .first li input {
+          width: 265px;
+          height: 40px;
+          padding-left: 40px; }
+        .con .login .first li #check {
+          width: 13px;
+          height: 13px; }
+        .con .login .first li #log {
+          float: right; }
+        .con .login .first li a:hover {
+          color: #dc0f50; }
+        .con .login .first li #sub {
+          display: block;
+          width: 306px;
+          height: 40px;
+          background: #dc0f50;
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          font-weight: bold;
+          letter-spacing: 5px; }
+    .con .login .quik {
+      width: 306px;
+      height: 330px;
+      border: 1px solid #bbb;
+      margin-top: -1px;
+      padding: 10px 70px 0 70px; }
+      .con .login .quik p {
+        width: 276px;
+        height: 40px;
+        padding-left: 30px;
+        line-height: 40px;
+        color: #dc0f50;
+        background: url(../img/ling.png) no-repeat 5px center; }
+      .con .login .quik li {
+        width: 306px;
+        height: 40px;
+        margin-bottom: 20px; }
+        .con .login .quik li input {
+          width: 265px;
+          height: 40px;
+          outline: none;
+          padding-left: 40px; }
+        .con .login .quik li #check {
+          width: 13px;
+          height: 13px; }
+        .con .login .quik li #log {
+          float: right; }
+        .con .login .quik li a:hover {
+          color: #dc0f50; }
+        .con .login .quik li #sub {
+          display: block;
+          width: 306px;
+          height: 40px;
+          background: #dc0f50;
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          line-height: 40px;
+          font-weight: bold;
+          letter-spacing: 5px; }
+      .con .login .quik li:nth-child(4) {
+        margin-bottom: 0; }
+
+/*# sourceMappingURL=login.css.map */

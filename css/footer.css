@@ -25,75 +25,112 @@ i, em {
 
 footer {
   width: 100%;
-  height: 370px; }
+  height: 342px; }
 
-#footer {
+#footer-top {
   width: 1200px;
-  height: 370px;
+  height: 270px;
   margin: 0 auto; }
-  #footer ul {
+  #footer-top ul {
     width: 1200px;
     height: 54px;
-    margin: 20px 20px 45px; }
-    #footer ul li {
+    margin: 20px 20px 35px; }
+    #footer-top ul li {
       float: left;
       padding: 0 15px 0 85px;
       height: 54px;
       border-right: 1px solid #ccc; }
-      #footer ul li em {
+      #footer-top ul li em {
         display: block;
         font-size: 16px;
         line-height: 22px;
         padding-top: 5px; }
-      #footer ul li i {
+      #footer-top ul li i {
         display: block;
         line-height: 18px;
         padding-top: 5px;
         color: #999; }
-    #footer ul li:nth-child(1) {
+    #footer-top ul li:nth-child(1) {
       background: url(../img/minimg/warrant_icon.png) no-repeat 15px 0; }
-    #footer ul li:nth-child(2) {
+    #footer-top ul li:nth-child(2) {
       background: url(../img/minimg/warrant_icon.png) no-repeat 15px -54px; }
-    #footer ul li:nth-child(3) {
+    #footer-top ul li:nth-child(3) {
       background: url(../img/minimg/warrant_icon.png) no-repeat 15px -108px; }
-    #footer ul li:nth-child(4) {
+    #footer-top ul li:nth-child(4) {
       background: url(../img/minimg/warrant_icon.png) no-repeat 15px -163px; }
-    #footer ul li:nth-child(5) {
+    #footer-top ul li:nth-child(5) {
       background: url(../img/minimg/warrant_icon.png) no-repeat 15px -218px;
       border: none; }
-  #footer .foot {
+  #footer-top .foot {
     width: 1200px;
     height: 151px; }
-    #footer .foot .foot-list {
+    #footer-top .foot .foot-list {
       width: 900px;
       height: 151px;
       float: left;
       padding-left: 20px; }
-      #footer .foot .foot-list dl {
+      #footer-top .foot .foot-list dl {
         float: left;
         margin: 0 40px;
         text-align: center; }
-        #footer .foot .foot-list dl dt a {
+        #footer-top .foot .foot-list dl dt a {
           font-size: 16px;
           font-weight: bold;
           line-height: 30px; }
-          #footer .foot .foot-list dl dt a:hover {
+          #footer-top .foot .foot-list dl dt a:hover {
             color: #dc0f50; }
-        #footer .foot .foot-list dl dd a {
+        #footer-top .foot .foot-list dl dd a {
+          display: block;
+          height: 20px;
           line-height: 20px;
           color: #999; }
-          #footer .foot .foot-list dl dd a:hover {
+          #footer-top .foot .foot-list dl dd a:hover {
             color: #dc0f50; }
-    #footer .foot #foot-ro {
+    #footer-top .foot #foot-ro {
       float: left;
-      width: 260px;
+      width: 210px;
       height: 151px; }
-      #footer .foot #foot-ro ul li {
-        width: 80px;
+      #footer-top .foot #foot-ro ul {
+        width: 210px;
         height: 104px;
-        background: none; }
-        #footer .foot #foot-ro ul li img {
+        margin: 0; }
+        #footer-top .foot #foot-ro ul li {
           width: 80px;
-          height: 80px; }
+          height: 104px;
+          background: none;
+          padding: 0;
+          border: none;
+          text-align: center;
+          font-weight: bold;
+          margin-right: 20px; }
+          #footer-top .foot #foot-ro ul li img {
+            width: 80px;
+            height: 80px; }
+      #footer-top .foot #foot-ro p {
+        margin-top: 10px;
+        width: 210px;
+        height: 37px;
+        padding-left: 40px;
+        background: url(../img/minimg/mobile.png) no-repeat left center; }
+        #footer-top .foot #foot-ro p em {
+          display: block;
+          font-weight: bold;
+          font-size: 20px; }
+        #footer-top .foot #foot-ro p i {
+          display: block;
+          line-height: 14px; }
+
+.foof {
+  width: 100%;
+  height: 72px;
+  background: #333; }
+  .foof .footf {
+    width: 1200px;
+    height: 52px;
+    padding: 10px 0;
+    margin: 0 auto;
+    background: #333; }
+    .foof .footf p a:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=footer.css.map */
