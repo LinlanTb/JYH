@@ -2,9 +2,6 @@
 function AutoPlayImgs(obj){
 	this.boxId = obj.boxId;
 	this.width = obj.width;
-	this.aWidth = obj.aWidth;
-	this.aHeight = obj.aHeight;
-	this.aTop = obj.aTop;
 	this.height = obj.height;
 	this.imgs = obj.imgs;
 	this.cirWidth = obj.cirWidth;
@@ -23,29 +20,8 @@ AutoPlayImgs.prototype.InitUI = function(){
 	var that = this;
 	$(this.boxId).mouseenter(function(){
 		clearInterval(that.timer);
-		$("#prv").css({"display":"block"});
-		$("#nxt").css({"display":"block"});
-		$("#prv").click(function(){
-//			clearInterval(that.timer);
-			that.current--;
-			if(that.current<0){
-				that.current=that.imgs.length-1;
-			}
-			$(that.boxId+" ul:eq(0) li").css({"display":"none","opacity":0});
-			$(that.boxId+" ul:eq(0) li").eq(that.current).css({"display":"block"});
-			$(that.boxId+" ul:eq(0) li").eq(that.current).animate({"opacity":1},that.speed);
-			$(that.boxId+" ul:eq(1) li").css("background",that.bgColor);
-			$(that.boxId+" ul:eq(1) li").eq(that.current).css("background",that.highLightColor);
-			console.log(that.current);
-		});
-		$("#nxt").click(function(){
-			clearInterval(that.timer);
-			that.goStep();
-		});
 	});
 	$(this.boxId).mouseleave(function(){
-		$("#prv").css({"display":"none"});
-		$("#nxt").css({"display":"none"});
 		that.go();
 	});
 	//创建图片的ul
@@ -58,12 +34,6 @@ AutoPlayImgs.prototype.InitUI = function(){
 	htmlUl += "</ul>";
 	$(this.boxId).append(htmlUl);
 	$(this.boxId+" ul:eq(0) li").eq(0).css({"display":"block","opacity":1});
-	//点击的按钮
-	let prev = "<a href='###' id='prv' style = 'width:"+this.aWidth+"px;height:"+this.aHeight+"px;position:absolute;background:rgba(0,0,0,0.6);left:0px;top:"+this.aTop
-	+"px;font-size:60px;display:none;text-decoration:none;color:#fff;text-align:center;line-height:"+this.aHeight+"px;'>&lt;</a>";
-	$(this.boxId).append(prev);
-	let next = "<a href='###' id='nxt' style = 'width:"+this.aWidth+"px;height:"+this.aHeight+"px;display:none;text-decoration:none;color:#fff;position:absolute;background:rgba(0,0,0,0.6);right:0px;top:"+this.aTop+"px;font-size:60px;text-align:center;line-height:"+this.aHeight+"px;'>&gt;</a>";
-	$(this.boxId).append(next);
 	//放圆点的ul
 	let objUl = "<ul style='position:absolute;left:"+this.cirLeft+"px;bottom:"+this.cirBottom+"px;'>";
 	for(let j=0;j<this.imgs.length;j++){

@@ -7,6 +7,10 @@ body {
   font: 12px/24px "微软雅黑";
   color: #666; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 ul, li, ol {
   list-style: none; }
 
@@ -91,11 +95,20 @@ section {
       .section .banner .turnPic .pic {
         margin-top: 5px;
         height: 175px; }
-        .section .banner .turnPic .pic img {
+        .section .banner .turnPic .pic a {
+          display: block;
+          float: left;
           width: 353px;
-          height: 175px; }
-        .section .banner .turnPic .pic img:first-child {
-          margin-right: 4px; }
+          height: 175px;
+          overflow: hidden; }
+          .section .banner .turnPic .pic a img {
+            width: 353px;
+            height: 175px;
+            transition: all 2s; }
+            .section .banner .turnPic .pic a img:hover {
+              transform: scale(1.3, 1.3); }
+        .section .banner .turnPic .pic a:first-child {
+          margin-right: 5px; }
     .section .banner .login {
       width: 232px;
       height: 561px;
@@ -215,26 +228,33 @@ section {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid #ccc; }
-    .section .good-list #glists {
+    .section .good-list #glists1 {
       width: 1200px;
       height: 300px;
       position: relative;
       overflow: hidden; }
-      .section .good-list #glists ul {
+      .section .good-list #glists1 ul {
         min-width: 9999px;
         height: 298px;
         margin: 0 20px;
         position: absolute;
         left: 0;
         top: 0; }
-        .section .good-list #glists ul li {
+        .section .good-list #glists1 ul li {
           float: left;
           width: 200px;
           margin: 0 25px 0 10px; }
-          .section .good-list #glists ul li img {
+          .section .good-list #glists1 ul li .box {
             width: 200px;
-            height: 200px; }
-          .section .good-list #glists ul li p {
+            height: 200px;
+            overflow: hidden; }
+            .section .good-list #glists1 ul li .box img {
+              width: 200px;
+              height: 200px;
+              transition: all 2s; }
+              .section .good-list #glists1 ul li .box img:hover {
+                transform: scale(1.3, 1.3); }
+          .section .good-list #glists1 ul li p {
             width: 200px;
             height: 24px;
             position: relative;
@@ -242,7 +262,7 @@ section {
             background: rgba(0, 0, 0, 0.6);
             text-align: center;
             color: #fff; }
-          .section .good-list #glists ul li span {
+          .section .good-list #glists1 ul li span {
             width: 190px;
             padding: 5px;
             height: 34px;
@@ -251,16 +271,18 @@ section {
             color: #333;
             display: block;
             overflow: hidden; }
-          .section .good-list #glists ul li i {
+          .section .good-list #glists1 ul li i {
             display: block;
             font-size: 20px;
             color: #dc0f50; }
-            .section .good-list #glists ul li i em {
+            .section .good-list #glists1 ul li i em {
               color: #666;
               padding: 0 10px;
               font-size: 12px;
               text-decoration: line-through; }
-      .section .good-list #glists #prev, .section .good-list #glists #next {
+          .section .good-list #glists1 ul li:hover span {
+            color: #dc0f50; }
+      .section .good-list #glists1 #prev1, .section .good-list #glists1 #next1 {
         width: 30px;
         height: 60px;
         font-size: 30px;
@@ -271,9 +293,9 @@ section {
         background: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 60px; }
-      .section .good-list #glists #prev {
+      .section .good-list #glists1 #prev1 {
         left: 0; }
-      .section .good-list #glists #next {
+      .section .good-list #glists1 #next1 {
         right: 0; }
   .section .time-list {
     width: 1200px;
@@ -304,27 +326,34 @@ section {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid #ccc; }
-    .section .time-list #glists {
+    .section .time-list #glists2 {
       width: 1200px;
       height: 300px;
       position: relative;
       overflow: hidden; }
-      .section .time-list #glists ul {
+      .section .time-list #glists2 ul {
         min-width: 9999px;
         height: 298px;
         margin: 0 20px;
         position: absolute;
         left: 0;
         top: 0; }
-        .section .time-list #glists ul li {
+        .section .time-list #glists2 ul li {
           float: left;
           width: 200px;
           margin: 0 25px 0 10px;
           position: relative; }
-          .section .time-list #glists ul li img {
+          .section .time-list #glists2 ul li .box {
             width: 200px;
-            height: 200px; }
-          .section .time-list #glists ul li p {
+            height: 200px;
+            overflow: hidden; }
+            .section .time-list #glists2 ul li .box img {
+              width: 200px;
+              height: 200px;
+              transition: all 2s; }
+              .section .time-list #glists2 ul li .box img:hover {
+                transform: scale(1.3, 1.3); }
+          .section .time-list #glists2 ul li p {
             width: 50px;
             height: 28px;
             position: absolute;
@@ -333,7 +362,7 @@ section {
             background: #dc6c8f;
             text-align: center;
             color: #fff; }
-          .section .time-list #glists ul li span {
+          .section .time-list #glists2 ul li span {
             width: 130px;
             padding: 5px 55px 5px 5px;
             height: 34px;
@@ -342,18 +371,18 @@ section {
             color: #333;
             display: block;
             overflow: hidden; }
-          .section .time-list #glists ul li i {
+          .section .time-list #glists2 ul li i {
             width: 130px;
             display: block;
             font-size: 20px;
             padding: 5px 55px 5px 5px;
             color: #dc0f50; }
-            .section .time-list #glists ul li i em {
+            .section .time-list #glists2 ul li i em {
               color: #666;
               padding: 0 10px;
               font-size: 12px;
               text-decoration: line-through; }
-          .section .time-list #glists ul li b {
+          .section .time-list #glists2 ul li b {
             width: 40px;
             height: 48px;
             display: block;
@@ -364,7 +393,9 @@ section {
             font-size: 16px;
             color: #fff;
             background: #ea2e2f; }
-      .section .time-list #glists #prev, .section .time-list #glists #next {
+          .section .time-list #glists2 ul li:hover span {
+            color: #dc0f50; }
+      .section .time-list #glists2 #prev2, .section .time-list #glists2 #next2 {
         width: 30px;
         height: 60px;
         font-size: 30px;
@@ -375,9 +406,9 @@ section {
         background: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 60px; }
-      .section .time-list #glists #prev {
+      .section .time-list #glists2 #prev2 {
         left: 0; }
-      .section .time-list #glists #next {
+      .section .time-list #glists2 #next2 {
         right: 0; }
   .section .like-list {
     width: 1200px;
@@ -394,27 +425,34 @@ section {
         background: #fff;
         font-size: 24px;
         color: #333; }
-    .section .like-list #glists {
+    .section .like-list #glists3 {
       width: 1200px;
       height: 300px;
       position: relative;
       overflow: hidden; }
-      .section .like-list #glists ul {
+      .section .like-list #glists3 ul {
         min-width: 9999px;
         height: 298px;
         margin: 0 20px;
         position: absolute;
         left: 0;
         top: 0; }
-        .section .like-list #glists ul li {
+        .section .like-list #glists3 ul li {
           float: left;
           width: 200px;
           margin: 0 25px 0 10px;
           position: relative; }
-          .section .like-list #glists ul li img {
+          .section .like-list #glists3 ul li .box {
             width: 200px;
-            height: 200px; }
-          .section .like-list #glists ul li span {
+            height: 200px;
+            overflow: hidden; }
+            .section .like-list #glists3 ul li .box img {
+              width: 200px;
+              height: 200px;
+              transition: all 2s; }
+              .section .like-list #glists3 ul li .box img:hover {
+                transform: scale(1.3, 1.3); }
+          .section .like-list #glists3 ul li span {
             width: 130px;
             padding: 5px 55px 5px 5px;
             height: 34px;
@@ -423,18 +461,20 @@ section {
             color: #333;
             display: block;
             overflow: hidden; }
-          .section .like-list #glists ul li i {
+          .section .like-list #glists3 ul li i {
             width: 130px;
             display: block;
             font-size: 20px;
             padding: 5px 55px 5px 5px;
             color: #dc0f50; }
-            .section .like-list #glists ul li i em {
+            .section .like-list #glists3 ul li i em {
               color: #666;
               padding: 0 10px;
               font-size: 12px;
               text-decoration: line-through; }
-      .section .like-list #glists #prev, .section .like-list #glists #next {
+          .section .like-list #glists3 ul li:hover span {
+            color: #dc0f50; }
+      .section .like-list #glists3 #prev3, .section .like-list #glists3 #next3 {
         width: 30px;
         height: 60px;
         font-size: 30px;
@@ -445,9 +485,9 @@ section {
         background: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 60px; }
-      .section .like-list #glists #prev {
+      .section .like-list #glists3 #prev3 {
         left: 0; }
-      .section .like-list #glists #next {
+      .section .like-list #glists3 #next3 {
         right: 0; }
   .section .floor {
     width: 1200px;
@@ -472,11 +512,18 @@ section {
           height: 108px;
           margin-top: 20px;
           text-align: center; }
-          .section .floor .floor-left .left p img {
+          .section .floor .floor-left .left p a {
             width: 80px;
             height: 30px;
             margin: 5px;
-            border: 1px solid #bbb; }
+            display: inline-block; }
+            .section .floor .floor-left .left p a img {
+              width: 80px;
+              height: 30px;
+              border: 1px solid #bbb; }
+            .section .floor .floor-left .left p a:hover img {
+              border: 1px solid #DC0F50;
+              transition: all 2s; }
       .section .floor .floor-left .right {
         width: 580px;
         height: 514px;
@@ -487,6 +534,21 @@ section {
           height: 310px;
           overflow: hidden;
           position: relative; }
+        .section .floor .floor-left .right .proimg {
+          width: 580px;
+          height: 190px;
+          margin-top: 5px; }
+          .section .floor .floor-left .right .proimg a {
+            display: block;
+            width: 190px;
+            height: 190px;
+            float: left; }
+            .section .floor .floor-left .right .proimg a img {
+              width: 190px;
+              height: 190px; }
+            .section .floor .floor-left .right .proimg a:hover {
+              border: 1px solid #DC0F50;
+              transition: all 2s; }
     .section .floor .floor-right {
       width: 300px;
       height: 556px;
@@ -528,5 +590,70 @@ section {
             display: block;
             font-size: 20px;
             color: #dc0f50; }
+
+#fix {
+  width: 30px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6); }
+  #fix #user {
+    display: block;
+    width: 25px;
+    margin: 100px 2px 20px 3px;
+    height: 25px;
+    background: url(../img/sideb.png) 3px 2px; }
+    #fix #user:hover {
+      background: url(../img/sideb.png) -22px 2px; }
+  #fix #shop {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 50px 0;
+    background: url(../img/ind.png) 2px -53px; }
+    #fix #shop:hover {
+      background: url(../img/ind.png) 2px -87px; }
+  #fix #code {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 30px 0;
+    position: relative;
+    background: url(../img/sideb.png) 5px -150px; }
+    #fix #code:hover {
+      background: url(../img/sideb.png) -20px -150px; }
+      #fix #code:hover .cod {
+        display: block; }
+    #fix #code .cod {
+      width: 240px;
+      height: 140px;
+      display: none;
+      border: 1px solid #bbb;
+      position: absolute;
+      top: -40px;
+      right: 30px;
+      background: #fff; }
+      #fix #code .cod i {
+        width: 110px;
+        height: 130px;
+        padding: 5px;
+        float: left;
+        display: block;
+        text-align: center; }
+        #fix #code .cod i img {
+          width: 90px;
+          height: 90px; }
+        #fix #code .cod i span {
+          display: block;
+          width: 110px; }
+  #fix #back {
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/sideb.png) 5px -179px;
+    margin: 30px 0; }
+    #fix #back:hover {
+      background: url(../img/sideb.png) -20px -179px; }
 
 /*# sourceMappingURL=index.css.map */

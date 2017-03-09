@@ -7,6 +7,10 @@ body {
   font: 12px/24px "微软雅黑";
   color: #666; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 ul, li, ol {
   list-style: none; }
 

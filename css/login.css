@@ -7,6 +7,10 @@ body {
   font: 12px/24px "微软雅黑";
   color: #666; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 ul, li, ol {
   list-style: none; }
 
@@ -59,33 +63,55 @@ section {
           font-size: 18px;
           width: 72px;
           line-height: 38px; }
-        .con .login .fr a:hover i {
-          color: #dc0f50;
-          border-bottom: 2px solid #dc0f50; }
-    .con .login .first {
-      width: 306px;
-      height: 295px;
-      display: none;
+    .con .login .active {
+      color: #dc0f50;
+      border-bottom: 2px solid #dc0f50; }
+    .con .login #first {
+      width: 336px;
+      height: 265px;
       border: 1px solid #bbb;
       margin-top: -1px;
-      padding: 45px 70px 0 70px; }
-      .con .login .first li {
-        width: 306px;
+      padding: 70px 40px 0 70px;
+      position: relative; }
+      .con .login #first #text {
+        display: none;
+        height: 30px;
+        width: 300px;
+        position: absolute;
+        top: 30px;
+        left: 70px;
+        padding-left: 30px;
+        color: #dc0f50;
+        background: url(../img/error_bg.png) no-repeat left center; }
+      .con .login #first li {
+        width: 336px;
         height: 40px;
-        margin-bottom: 20px;
-        outline: none; }
-        .con .login .first li input {
+        margin-bottom: 20px; }
+        .con .login #first li em {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          display: none;
+          background: url(../img/correct_bg.png); }
+        .con .login #first li input {
           width: 265px;
           height: 40px;
-          padding-left: 40px; }
-        .con .login .first li #check {
+          padding-left: 40px;
+          outline: none;
+          border: 1px solid #bbb; }
+        .con .login #first li #txt {
+          background: url(../img/name2.jpg) no-repeat left center; }
+        .con .login #first li #pwd {
+          background: url(../img/code2.jpg) no-repeat left center; }
+        .con .login #first li #check {
           width: 13px;
           height: 13px; }
-        .con .login .first li #log {
-          float: right; }
-        .con .login .first li a:hover {
+        .con .login #first li #log {
+          float: right;
+          margin-right: 30px; }
+        .con .login #first li a:hover {
           color: #dc0f50; }
-        .con .login .first li #sub {
+        .con .login #first li #sub {
           display: block;
           width: 306px;
           height: 40px;
@@ -96,36 +122,87 @@ section {
           line-height: 40px;
           font-weight: bold;
           letter-spacing: 5px; }
-    .con .login .quik {
-      width: 306px;
+    .con .login #quik {
+      width: 336px;
       height: 330px;
       border: 1px solid #bbb;
       margin-top: -1px;
-      padding: 10px 70px 0 70px; }
-      .con .login .quik p {
-        width: 276px;
+      display: none;
+      padding: 10px 40px 0 70px;
+      position: relative; }
+      .con .login #quik p {
+        width: 336px;
         height: 40px;
         padding-left: 30px;
         line-height: 40px;
         color: #dc0f50;
         background: url(../img/ling.png) no-repeat 5px center; }
-      .con .login .quik li {
-        width: 306px;
+      .con .login #quik #text1 {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        width: 300px;
+        display: none;
+        height: 40px;
+        line-height: 40px;
+        color: #dc0f50;
+        background: #fff url(../img/error_bg.png) no-repeat left center;
+        padding-left: 30px; }
+      .con .login #quik li:first-child {
+        position: relative; }
+        .con .login #quik li:first-child button {
+          display: block;
+          width: 90px;
+          height: 42px;
+          position: absolute;
+          top: 0;
+          right: 30px;
+          background: #dc0f50;
+          text-align: center;
+          color: #fff;
+          border: none;
+          font-weight: 600; }
+      .con .login #quik li:nth-child(2) {
+        position: relative; }
+        .con .login #quik li:nth-child(2) #ckimg {
+          width: 90px;
+          height: 40px;
+          position: absolute;
+          top: 1px;
+          right: 30px;
+          border: 0;
+          border-left: 1px solid #bbb; }
+      .con .login #quik li {
+        width: 336px;
         height: 40px;
         margin-bottom: 20px; }
-        .con .login .quik li input {
+        .con .login #quik li em {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          display: none;
+          background: url(../img/correct_bg.png); }
+        .con .login #quik li input {
           width: 265px;
           height: 40px;
           outline: none;
-          padding-left: 40px; }
-        .con .login .quik li #check {
+          padding-left: 40px;
+          border: 1px solid #bbb; }
+        .con .login #quik li #txt1 {
+          background: url(../img/name2.jpg) no-repeat left center; }
+        .con .login #quik li #pwd1 {
+          background: url(../img/code2.jpg) no-repeat left center; }
+        .con .login #quik li #pwd2 {
+          background: url(../img/code2.jpg) no-repeat left center; }
+        .con .login #quik li #check1 {
           width: 13px;
           height: 13px; }
-        .con .login .quik li #log {
-          float: right; }
-        .con .login .quik li a:hover {
+        .con .login #quik li #log1 {
+          float: right;
+          margin-right: 30px; }
+        .con .login #quik li a:hover {
           color: #dc0f50; }
-        .con .login .quik li #sub {
+        .con .login #quik li #sub1 {
           display: block;
           width: 306px;
           height: 40px;
@@ -136,7 +213,7 @@ section {
           line-height: 40px;
           font-weight: bold;
           letter-spacing: 5px; }
-      .con .login .quik li:nth-child(4) {
+      .con .login #quik li:nth-child(4) {
         margin-bottom: 0; }
 
 /*# sourceMappingURL=login.css.map */

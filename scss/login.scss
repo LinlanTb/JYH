@@ -41,28 +41,55 @@ section{
                     width:72px;
                     line-height:38px;
                 }
-                &:hover i{
-                    color:$color;
-                    border-bottom:2px solid $color;
-                }
+                
             }
         }
-        .first{
-            width:306px;
-            height:295px;
-            display:none;
+        .active{
+            color:$color;
+            border-bottom:2px solid $color;
+        }
+        #first{
+            width:336px;
+            height:265px;
+//          display:none;
             border:1px solid #bbb;
             margin-top:-1px;
-            padding:45px 70px 0 70px;
+            padding:70px 40px 0 70px;
+            position:relative;
+            #text{
+                display:none;
+                height:30px;
+                width:300px;
+                position:absolute;
+                top:30px;
+                left:70px;
+                padding-left:30px;
+                color:$color;
+                background: url(../img/error_bg.png) no-repeat left center;
+            }
             li{
-                width:306px;
+                width:336px;
                 height:40px;
                 margin-bottom:20px;
-                outline:none;
+                em{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    display:none;
+                    background:url(../img/correct_bg.png);
+                }
                 input{
                     width:265px;
                     height:40px;
                     padding-left:40px;
+                    outline:none;
+                    border:1px solid #bbb;
+                }
+                #txt{
+                    background: url(../img/name2.jpg) no-repeat left center;
+                }
+                #pwd{
+                    background: url(../img/code2.jpg) no-repeat left center;
                 }
                 #check{
                     width:13px;
@@ -70,6 +97,7 @@ section{
                 }
                 #log{
                     float:right;
+                    margin-right:30px;
                 }
                 a:hover{
                     color:$color;
@@ -89,41 +117,99 @@ section{
             }
         }
         //first结束
-        .quik{
-            width:306px;
+        #quik{
+            width:336px;
             height:330px;
             border:1px solid #bbb;
             margin-top:-1px;
-            padding:10px 70px 0 70px;
+            display:none;
+            padding:10px 40px 0 70px;
+            position:relative;
+            
             p{
-                width:276px;
+                width:336px;
                 height:40px;
                 padding-left:30px;
                 line-height:40px;
                 color:$color;
                 background:url(../img/ling.png) no-repeat 5px center;
             }
+            #text1{
+                position:absolute;
+                top:10px;
+                left:70px;
+                width:300px;
+                display:none;
+                height:40px;line-height:40px;
+                color:$color;
+                background:#fff url(../img/error_bg.png) no-repeat left center;
+                padding-left:30px;
+            }
+            li:first-child{
+                position:relative;
+                button{
+                    display: block;
+                    width:90px;
+                    height:42px;
+                    position:absolute;
+                    top:0;right:30px;
+                    background:$color;
+                    text-align:center;
+                    color:#fff;
+                    border:none;
+                    font-weight:600;
+                }
+            }
+            li:nth-child(2){
+                position:relative;
+                #ckimg{
+                    width:90px;
+                    height:40px;
+                    position:absolute;
+                    top:1px;right:30px;
+                    border:0;
+                    border-left:1px solid #bbb;
+                }
+            }
             li{
-                width:306px;
+                width:336px;
                 height:40px;
                 margin-bottom:20px;
+                em{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    display:none;
+                    background:url(../img/correct_bg.png);
+                }
                 input{
                     width:265px;
                     height:40px;
                     outline:none;
                     padding-left:40px;
+                    border:1px solid #bbb;
                 }
-                #check{
+                #txt1{
+                    background: url(../img/name2.jpg) no-repeat left center;
+                }
+                #pwd1{
+                    background: url(../img/code2.jpg) no-repeat left center;
+                }
+                #pwd2{
+                    background: url(../img/code2.jpg) no-repeat left center;
+                }
+                #check1{
                     width:13px;
                     height:13px;
                 }
-                #log{
+                #log1{
                     float:right;
+                    margin-right:30px;
                 }
                 a:hover{
                     color:$color;
                 }
-                #sub{
+                #sub1{
                     display:block;
                     width:306px;
                     height:40px;

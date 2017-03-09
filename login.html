@@ -15,13 +15,14 @@
 				</div>
 				<div class="login">
 					<div class="fr">
-						<a href="###"><i>用户登录</i></a>
-						<a href="###"><i>快捷登录</i></a>
+						<a href="###" id="userlg"><i class="active">用户登录</i></a>
+						<a href="###" id="quiklg"><i>快捷登录</i></a>
 					</div>
-					<div class="first">
+					<div id="first">
+						<span id="text"></span>
 						<ul>
-							<li><input type="text" id="txt" placeholder="请输入11位有效手机号"/></li>
-							<li><input type="password" id="pwd" placeholder="请输入密码" /></li>
+							<li><input type="text" id="txt" placeholder="请输入11位有效手机号" maxlength="11"/><em></em></li>
+							<li><input type="password" id="pwd" placeholder="请输入密码" /><em></em></li>
 							<li>
 								<label><input type="checkbox" id="check" />下次自动登录 </label>
 								<a href="http://www.jyh.com/IndexMain.html?u=FindPassword" id="reset"> 重置密码</a>
@@ -30,19 +31,31 @@
 							<li><a href="###" id="sub">登录</a></li>
 						</ul>
 					</div>
-					<div class="quik">
+					<div id="quik">
 						<p>电视激活用户由此登录</p>
+						<p id="text1">请输入正确的手机号</p>
 						<span>请保持你的手机畅通，用于接收验证码短信</span>
 						<ul>
-							<li><input type="text" id="txt" placeholder="请输入11位有效手机号"/></li>
-							<li><input type="password" id="pwd1" placeholder="请输入图片验证码"/></li>
-							<li><input type="password" id="pwd2" placeholder="请输入验证码"/></li>
 							<li>
-								<label><input type="checkbox" id="check" />下次自动登录 </label>
-								<a href="http://www.jyh.com/IndexMain.html?u=FindPassword" id="reset"> 重置密码</a>
-								<a href="###" id="log">新用户注册</a>
+								<input type="text" id="txt1" placeholder="请输入11位有效手机号" maxlength="11"/>
+								<em></em>
+								<button>获取验证码</button>
 							</li>
-							<li><a href="###" id="sub">登录</a></li>
+							<li>
+								<input type="password" id="pwd1" placeholder="请输入图片验证码"/>
+								<em></em>
+								<img src="img/banner/fp1.jpg" alt="点击切换图片" id="ckimg"/>
+							</li>
+							<li>
+								<input type="password" id="pwd2" placeholder="请输入验证码"/>
+								<em></em>
+							</li>
+							<li>
+								<label><input type="checkbox" id="check1" />下次自动登录 </label>
+								<a href="http://www.jyh.com/IndexMain.html?u=FindPassword" id="reset"> 重置密码</a>
+								<a href="###" id="log1">新用户注册</a>
+							</li>
+							<li><a href="###" id="sub1">登录</a></li>
 						</ul>
 					</div>
 				</div>
@@ -55,6 +68,19 @@
 		$(function(){
 			$("header").load("top.html");
 			$("footer").load("footer.html");
+			//用户登录和快捷登录 的点击事件
+			$("#userlg").click(function(){
+				$("#userlg i").addClass("active");
+				$("#quiklg i").removeClass("active");
+				$("#first").css({"display":"block"});
+				$("#quik").css({"display":"none"});
+			});
+			$("#quiklg").click(function(){
+				$("#quiklg i").addClass("active");
+				$("#userlg i").removeClass("active");
+				$("#first").css({"display":"none"});
+				$("#quik").css({"display":"block"});
+			});
 		});
 	</script>
 </html>

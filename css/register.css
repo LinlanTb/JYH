@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+.section {
+  width: 100%;
+  height: 562px;
+  border-top: 2px solid #dc0f50; }
+
+.main {
+  width: 1040px;
+  height: 402px;
+  padding: 80px;
+  margin: 0 auto; }
+  .main .mleft {
+    width: 590px;
+    height: 402px;
+    float: left; }
+    .main .mleft li {
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 20px; }
+      .main .mleft li label {
+        width: 100px;
+        display: inline-block;
+        font-size: 14px;
+        text-align: right; }
+        .main .mleft li label i {
+          color: #dc0f50;
+          margin-right: 5px; }
+      .main .mleft li input {
+        width: 265px;
+        height: 38px;
+        border: 1px solid #bbb;
+        outline: none;
+        margin: 0 10px;
+        padding-left: 15px; }
+    .main .mleft p {
+      width: 450px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center; }
+      .main .mleft p #tijiao {
+        width: 300px;
+        height: 40px;
+        display: inline-block;
+        background: #dc0f50;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 10px; }
+      .main .mleft p .log {
+        text-decoration: underline;
+        display: inline-block;
+        width: 300px;
+        height: 40px;
+        text-align: right;
+        font-size: 14px; }
+  .main .mright {
+    width: 448px;
+    height: 336px;
+    float: right; }
+
+/*# sourceMappingURL=register.css.map */
