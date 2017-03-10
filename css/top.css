@@ -27,6 +27,10 @@ img {
 i, em {
   font-style: normal; }
 
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
 .active, #top div span a:hover, #top div span:nth-child(5) a, #top div span:nth-child(7) a, #wrap-top #search p span:hover {
   color: #dc0f50; }
 

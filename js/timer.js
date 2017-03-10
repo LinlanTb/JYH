@@ -1,4 +1,4 @@
-function changTime(hour,sec,min){
+function changTime(hour,sec,min,wrap){
 	var timer;
 	var i=59;
 	j=59;
@@ -19,7 +19,9 @@ function changTime(hour,sec,min){
 				j=59;
 				k--;
 				$(hour).html(test(k));
-				
+				if(k==0){
+					$(wrap).css({"display":"block"})
+				}
 				
 			}
 		}

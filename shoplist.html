@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link href="img/tb.ico" type="image/x-icon" rel="icon"  />
+		<link href="css/shoplist.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header></header>
+		<section>
+			<hr/>
+			<div class="section">
+				<!--导航-->
+				<nav>
+					<dl>
+						<dt>全部商品分类
+							<div class="list">
+								<a href="###">海外购</a>
+								<a href="###">生活电器</a>
+								<a href="###">品质厨房</a>
+								<a href="###">厨房电器</a>
+								<a href="###">生活家居</a>
+								<a href="###">布艺家纺</a>
+								<a href="###">服装服饰</a>
+								<a href="###">箱包配饰</a>
+								<a href="###">美妆个护</a>
+								<a href="###">食品饮料</a>
+								<a href="###">运动健康</a>
+								<a href="###">3C数码</a>
+								<a href="###">宠物用品</a>
+							</div>
+						</dt>
+						<dd ><a href="index.html">首页</a></dd>
+						<dd><a href="###">TV直播</a></dd>
+						<dd><a href="###">品牌惠</a></dd>
+						<dd><a href="###">惠家有APP</a></dd>
+						<dd><a href="###">加油尊享</a></dd>
+						<dd><a href="###">家有优藏</a></dd>
+					</dl>
+				</nav>
+				<!--全部商品开始-->
+				<div class="allgoods">
+					<h2><a>全部商品</a></h2>
+					<!--商品分类-->
+					<div class="hd">
+						<dl>
+							<dt>分类</dt>
+							<dd>
+								<a href="###">全部</a>
+							</dd>
+							<span>更多</span>
+						</dl>
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<a href="###"></a>
+							</dd>
+						</dl>
+					</div>
+					<!--商品过滤-->
+					<div class="filter">
+						<ul>
+							<li class="curr"  data-sortflag="2" num="202024-li-1">综合</li>
+							<li>销量<i></i></li>
+							<li>人气<i></i></li>
+							<li>价格<b class="down"></b></li>
+							<li id="on" class="curr">
+								<input type="text" id="minPrice" value="" placeholder="￥"/>
+								<span>-</span>
+								<input type="text" id="maxPrice" value="" placeholder="￥"/>
+								<a id="btnPriceSearch" num="202024-1">确认</a>
+							</li>
+						</ul>
+					</div>
+					<!--//展示商品-->
+					<div class="show">
+						<ul id="goodshow">
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+							<li>
+								 <a><img src="img/goods/goods11.jpg" alt="">
+						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
+						            <p><i>￥2098</i>￥1399</p>
+						            <font><span><strong>赠品</strong></span>月销125件</font>
+						        </a>
+							</li>
+						</ul>
+					</div>
+					<!--商品过滤结束-->
+					<!--商品分页开始-->
+					<div class="pag">
+						<span id="PaginationTB">
+							<a class="curr" >
+							<span id="spprev">上一页</span>
+							</a>
+							<a  class="curr">1</a>
+							<a  href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<span>...</span><a href="#">62</a>
+							<a href="#">63</a>
+							<a href="#">
+							<span id="spnext">下一页</span>
+							</a>
+						</span>
+						<span id="PageSet">
+							<em>共63页 到第<input id="txtPageCount" type="text" value="1"/>页</em>
+							<a style="cursor:pointer">确定</a>
+							</span>
+					</div>
+				</div>
+				<!--全部商品结束-->
+				<!--热销推荐开始-->
+				<div class="selling">
+					<h2>热销推荐</h2>
+						<dl>
+							<dt>
+								<img src="img/goods/ds.jpg"/>
+								<span>1</span>
+							</dt>
+							<dd>
+								<a href="###">
+									<i>迪士尼百搭百变收纳柜 五斗收纳柜（两色可选）</i>
+									<em>￥263</em>
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="img/goods/ds.jpg"/>
+								<span>2</span>
+							</dt>
+							<dd>
+								<a href="###">
+									<i>迪士尼百搭百变收纳柜 五斗收纳柜（两色可选）</i>
+									<em>￥263</em>
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="img/goods/ds.jpg"/>
+								<span>3</span>
+							</dt>
+							<dd>
+								<a href="###">
+									<i>迪士尼百搭百变收纳柜 五斗收纳柜（两色可选）</i>
+									<em>￥263</em>
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="img/goods/ds.jpg"/>
+								<span>4</span>
+							</dt>
+							<dd>
+								<a href="###">
+									<i>迪士尼百搭百变收纳柜 五斗收纳柜（两色可选）</i>
+									<em>￥263</em>
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="img/goods/ds.jpg"/>
+								<span>5</span>
+							</dt>
+							<dd>
+								<a href="###">
+									<i>迪士尼百搭百变收纳柜 五斗收纳柜（两色可选）</i>
+									<em>￥263</em>
+								</a>
+							</dd>
+						</dl>
+				</div>
+				<!--热销推荐结束-->
+				<!--猜你喜欢开始-->
+				<div class="like-list">
+					<div class="hd">
+						<h2>猜你喜欢</h2>
+						<div class="line"></div>
+					</div>
+					<div id="glists3">
+						<ul id="ul3">
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l1.jpg"  /></div>
+									<span>吴三公黑木耳48g*3袋</span>
+									<i>￥29<em>￥44</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l2.jpg"  /></div>
+									<span>汇龍元 巨龙东北有机绿小米400g</span>
+									<i>￥39<em>￥48</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l3.jpg"  /></div>
+									<span>施悦名 春夏刺绣修身长袖OL衬衫上衣</span>
+									<i>￥559<em>￥1299</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l4.jpg"  /></div>
+									<span>巨龙东北有机慧仁米真空350g</span>
+									<i>￥39<em>￥49</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l5.jpg"  /></div>
+									<span>汇龍元 巨龙东北有机黑米真空420g</span>
+									<i>￥28<em>￥45</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l6.jpg"  /></div>
+									<span>诺兰丝汀韩版显瘦百搭加绒加厚弹力糖果保暖铅笔裤</span>
+									<i>￥69<em> ￥199</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l7.jpg"  /></div>
+									<span>韩国 SCANDINA 带盖肥皂盒 带图案</span>
+									<i>￥29<em> ￥46</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l8.jpg"  /></div>
+									<span>陌陌 韩版单肩斜跨简约女包</span>
+									<i>￥99<em> ￥488</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l9.jpg"  /></div>
+									<span>日光生活 轻巧随身 不锈钢餐具4件套</span>
+									<i>￥29<em> ￥42</em></i>
+								</a>
+							</li>
+						</ul>
+						<a href="###" id="prev3">&lt;</a>
+						<a href="###" id="next3">&gt;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/clickmove.js"></script>
+	<script>
+		$(function(){
+			$("header").load("top.html");
+			$("footer").load("footer.html");
+			var oUl3=MovePlay("#ul3","#next3","#prev3");
+			$(".filter li").on("click",function(){
+				$(".filter li:not(#on)").removeClass("curr");
+				$(this).addClass("curr");
+			});
+		});
+	</script>
+</html>

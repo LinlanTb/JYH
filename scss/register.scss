@@ -17,6 +17,8 @@ $color:#dc0f50;
        width:590px;
        height:402px;
        float:left;
+        
+          
        li{
           height:40px;
           line-height:40px;
@@ -31,6 +33,18 @@ $color:#dc0f50;
                   margin-right:5px;
               }
           }
+          span{
+              width:150px;
+              height:35px;
+              line-height:18px;
+              color:$color;
+              float:right;
+              display:none;
+              padding-top:5px;
+              padding-left:26px;
+              background:url(../img/ling.png) no-repeat left center;
+          }
+          
           input{
               width:265px;
               height:38px;
@@ -40,6 +54,25 @@ $color:#dc0f50;
               padding-left:15px;
           }
        }
+        li:nth-child(2){
+            position:relative;
+            input{
+                width:165px;
+                height:38px;
+            }
+            a{
+                display:inline-block;
+                width:85px;
+                height:40px;
+                text-align:center;
+                position:absolute;
+                top:0;left:310px;
+                img{
+                    width:85px;
+                    height:40px;
+                }
+            }
+        }
        p{
            width:450px;
            height:40px;
@@ -61,6 +94,18 @@ $color:#dc0f50;
                height:40px;
                text-align: right;font-size:14px;   
             }
+       }
+       li:nth-child(5){
+           input{
+               width:165px;
+           }
+           button{
+               width:85px;
+               height:40px;
+               border:0;
+               color:#fff;font-weight:600;
+               background: $color;
+           }
        }
    }
    .mright{

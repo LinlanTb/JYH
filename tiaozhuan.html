@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			section{
+				width:1200px;
+				height:300px;
+				margin:0 auto;
+				padding:80px;
+				border-top:2px solid #DC0F50;
+				
+			}
+			.text{
+				width:560px;
+				height:140px;
+				font-size:30px;
+			}
+			i{
+				margin:0 10px;
+				color:#DC0F50;
+			}
+			#clik{
+				display:block;
+				width:120px;
+				height:40px;
+				background:#090;
+				font-size:16px;
+				text-align: center;
+				line-height:40px;
+				color:#fff;
+				margin-left:130px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header></header>
+		<section>
+			<div class="text">注册成功<i id="time">5</i>秒后跳转到首页</div>
+			<a href="index.html" id="clik">点击进入首页</a>
+		</section>
+		<footer></footer>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script>
+		$(function(){
+			$("header").load("top.html");
+			$("footer").load("footer.html");
+			var timer;
+			 var i=5;
+			timer = setInterval(function(){
+				i--;
+				if(i==0){
+					location="index.html";
+					clearInterval(timer);
+				}
+				$("#time").html(i);
+			},1000);
+			
+		});
+	</script>
+</html>

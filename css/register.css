@@ -27,6 +27,10 @@ img {
 i, em {
   font-style: normal; }
 
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
 .section {
   width: 100%;
   height: 562px;
@@ -53,6 +57,16 @@ i, em {
         .main .mleft li label i {
           color: #dc0f50;
           margin-right: 5px; }
+      .main .mleft li span {
+        width: 150px;
+        height: 35px;
+        line-height: 18px;
+        color: #dc0f50;
+        float: right;
+        display: none;
+        padding-top: 5px;
+        padding-left: 26px;
+        background: url(../img/ling.png) no-repeat left center; }
       .main .mleft li input {
         width: 265px;
         height: 38px;
@@ -60,6 +74,22 @@ i, em {
         outline: none;
         margin: 0 10px;
         padding-left: 15px; }
+    .main .mleft li:nth-child(2) {
+      position: relative; }
+      .main .mleft li:nth-child(2) input {
+        width: 165px;
+        height: 38px; }
+      .main .mleft li:nth-child(2) a {
+        display: inline-block;
+        width: 85px;
+        height: 40px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 310px; }
+        .main .mleft li:nth-child(2) a img {
+          width: 85px;
+          height: 40px; }
     .main .mleft p {
       width: 450px;
       height: 40px;
@@ -80,6 +110,15 @@ i, em {
         height: 40px;
         text-align: right;
         font-size: 14px; }
+    .main .mleft li:nth-child(5) input {
+      width: 165px; }
+    .main .mleft li:nth-child(5) button {
+      width: 85px;
+      height: 40px;
+      border: 0;
+      color: #fff;
+      font-weight: 600;
+      background: #dc0f50; }
   .main .mright {
     width: 448px;
     height: 336px;

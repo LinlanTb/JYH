@@ -27,6 +27,10 @@ img {
 i, em {
   font-style: normal; }
 
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
 section {
   width: 100%;
   height: 540px;

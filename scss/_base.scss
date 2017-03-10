@@ -23,3 +23,7 @@ img{
     padding:0;margin:0;
 }
 i,em{font-style: normal;}
+input,textarea,select,button{
+    outline:none;
+    resize: none;
+}

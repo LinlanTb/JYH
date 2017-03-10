@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>注册</title>
+		<link href="img/tb.ico" type="image/x-icon" rel="icon"  />
 		<link href="css/register.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -18,8 +19,9 @@
 						</li>
 						<li>
 							<label><i>*</i>图片验证码</label>
-							<input type="text" id="pic" placeholder="请输入图片验证码"/>
-							<span></span>
+							<input type="text" id="pic" placeholder="请输入图片验证码"/><span></span>
+							<a><img src="img/yzm/0.html.png" alt="点击切换图片"/></a>
+							
 						</li>
 						<li>
 							<label><i>*</i>设置密码</label>
@@ -33,7 +35,8 @@
 						</li>
 						<li>
 							<label><i>*</i>验证码</label>
-							<input type="text" id="pho" placeholder="请输入11位有效的手机号码" maxlength="11" />
+							<input type="text" id="yzm" />
+							<button>获取验证码</button>
 							<span></span>
 						</li>
 						<p>
@@ -54,13 +57,12 @@
 		<div class="footer"></div>
 	</body>
 	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/register.js"></script>
 	<script>
 		$(function(){
 			$(".header").load("top.html");
 			$(".footer").load("footer.html");
-			var reg = /^[1][3578][0-9]{9}$/;
-			var str = "12456456415";
-			console.log(reg.test(str));
+			var yz = new regist("#pho","#pic","#paw1","#paw2","#yzm","#chek","#tijiao");
 		});
 		
 	</script>

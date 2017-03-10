@@ -27,4 +27,8 @@ img {
 i, em {
   font-style: normal; }
 
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
 /*# sourceMappingURL=style.css.map */
