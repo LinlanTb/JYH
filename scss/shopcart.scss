@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "base";
+$width:1200px;
+$color:#dc0f50;
+$fontSize:14px;
+section{
+    width:100%;position:relative;
+    hr{
+        position:absolute;
+        top:40px;
+        width:100%;
+        border:1px solid $color;
+    }
+}
+.section{
+    width:$width;
+    margin:0 auto;
+    //导航nav开始
+    nav{
+        width:$width;
+        height:40px;
+        dt{
+            float:left;
+            width:234px;
+            height:40px;
+            font-size:$fontSize;
+            color:#fff;
+            line-height:40px;
+            text-align:center;
+            margin-right:20px;
+            position:relative;
+            cursor:pointer;
+            background:#333 url(../img/nav_b_bg.jpg) no-repeat 200px center;
+            &:hover{
+                background:#333 url(../img/nav_a_bg.jpg) no-repeat 200px center;
+                .list{
+                    display:block;
+                    background:#fff;
+                }
+            }
+            //子菜单开始
+            .list{
+                position:absolute;
+                left:0;top:40px;
+                width:232px;
+                height:560px;
+                border:1px solid #ccc;
+                display:none;
+                a{
+                    display:block;
+                    height:40px;
+                    text-align:center;
+                    line-height:40px;
+                    font-size: $fontSize;color:#666;
+                    &:hover{
+                        background:$color;
+                    }
+                }
+            }
+            //子菜单结束
+        }
+        dd a{
+            float:left;
+            margin:0 15px; 
+            line-height:40px;
+            font-size:$fontSize;  
+            &:hover{
+                color:$color;
+            } 
+        }
+    }//导航nav结束
+    
+    .kong{
+        height: 150px;
+        text-align: center;
+        background: url(../img/gwc_kong.png) no-repeat center 111px;
+        padding-top: 300px;
+        line-height: 64px;
+        font-size: 14px;
+        color: #333;
+        a{
+            color:$color;
+            margin:0 5px;
+        }
+    }
+}

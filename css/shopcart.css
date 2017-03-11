@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
+section {
+  width: 100%;
+  position: relative; }
+  section hr {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    border: 1px solid #dc0f50; }
+
+.section {
+  width: 1200px;
+  margin: 0 auto; }
+  .section nav {
+    width: 1200px;
+    height: 40px; }
+    .section nav dt {
+      float: left;
+      width: 234px;
+      height: 40px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      margin-right: 20px;
+      position: relative;
+      cursor: pointer;
+      background: #333 url(../img/nav_b_bg.jpg) no-repeat 200px center; }
+      .section nav dt:hover {
+        background: #333 url(../img/nav_a_bg.jpg) no-repeat 200px center; }
+        .section nav dt:hover .list {
+          display: block;
+          background: #fff; }
+      .section nav dt .list {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 232px;
+        height: 560px;
+        border: 1px solid #ccc;
+        display: none; }
+        .section nav dt .list a {
+          display: block;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 14px;
+          color: #666; }
+          .section nav dt .list a:hover {
+            background: #dc0f50; }
+    .section nav dd a {
+      float: left;
+      margin: 0 15px;
+      line-height: 40px;
+      font-size: 14px; }
+      .section nav dd a:hover {
+        color: #dc0f50; }
+  .section .kong {
+    height: 150px;
+    text-align: center;
+    background: url(../img/gwc_kong.png) no-repeat center 111px;
+    padding-top: 300px;
+    line-height: 64px;
+    font-size: 14px;
+    color: #333; }
+    .section .kong a {
+      color: #dc0f50;
+      margin: 0 5px; }
+
+/*# sourceMappingURL=shopcart.css.map */

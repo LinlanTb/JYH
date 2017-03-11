@@ -70,7 +70,8 @@ section {
         width: 232px;
         height: 560px;
         border: 1px solid #ccc;
-        display: none; }
+        display: none;
+        z-index: 5555; }
         .section nav dt .list a {
           display: block;
           height: 40px;
@@ -226,21 +227,24 @@ section {
           margin: 11px 0 0 15px; }
     .section .allgoods .show {
       width: 940px;
-      padding: 8px; }
-      .section .allgoods .show #goodshow {
-        width: 940px; }
-        .section .allgoods .show #goodshow li {
+      padding: 8px;
+      overflow: hidden;
+      margin-bottom: 15px; }
+      .section .allgoods .show ul {
+        width: 940px;
+        overflow: hidden; }
+        .section .allgoods .show ul li {
           width: 220px;
           height: 314px;
           float: left;
-          margin-bottom: 20px;
+          margin-bottom: 25px;
           margin-right: 15px; }
-          .section .allgoods .show #goodshow li a {
+          .section .allgoods .show ul li a {
             display: block; }
-            .section .allgoods .show #goodshow li a img {
+            .section .allgoods .show ul li a img {
               width: 214px;
               height: 214px; }
-            .section .allgoods .show #goodshow li a b {
+            .section .allgoods .show ul li a b {
               padding: 5px 0;
               overflow: hidden;
               height: 40px;
@@ -248,17 +252,18 @@ section {
               font-size: 14px;
               color: #333;
               display: block; }
-            .section .allgoods .show #goodshow li a p {
+            .section .allgoods .show ul li a p {
               height: 24px;
+              width: 180px;
               line-height: 24px;
               font-size: 20px;
               color: #e11f24; }
-              .section .allgoods .show #goodshow li a p i {
+              .section .allgoods .show ul li a p i {
                 float: right;
                 font-size: 14px;
                 color: #999;
                 text-decoration: line-through; }
-            .section .allgoods .show #goodshow li a font {
+            .section .allgoods .show ul li a font {
               display: block;
               font-size: 14px;
               color: #666; }
@@ -270,6 +275,8 @@ section {
         border: 1px solid #dc0f50;
         color: #fff;
         background: #dc0f50; }
+      .section .allgoods .pag p {
+        display: inline-block; }
       .section .allgoods .pag a {
         display: inline-block;
         padding: 0 15px;
@@ -290,6 +297,8 @@ section {
         font-size: 14px;
         color: #666;
         margin-right: 10px; }
+        .section .allgoods .pag em #count {
+          margin: 0 5px; }
       .section .allgoods .pag input {
         width: 34px;
         height: 34px;

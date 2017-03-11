@@ -188,97 +188,141 @@ section{
                 h3{
                     color: #333;
                     font-size: 20px;
-                    height: 54px;
                     line-height: 30px;
                     padding: 7px 0;
                     border-bottom: 1px solid #d6d6d6;
                 }
                 .g-list{
                     width:630px;
-                    #price{
-                        height:60px;
-                        b{
-                            color: #dc0f50;
-                            font-size: 30px;
-                            margin-right: 8px;
+                    dl{
+                        width:630px;
+                        clear:both;
+                        dt{
+                            width:70px;
+                            float:left;
+                            padding:10px 0;
+                        }
+                        dd:first-child{
+                            position:relative;
+                            b{
+                                display: block;
+                                font-weight:bold;
+                                font-size:30px;
+                                line-height:32px;
+                                color:$color;
+                            }
+                            i{
+                                display:block;
+                                font-size:16px;
+                                margin-left:15px;
+                                text-decoration: line-through;
+                            }
+                            a{
+                                display:block;
+                                position:absolute;
+                                right:25px;
+                                color:$color;
+                                top:20%;padding-right:30px;
+                                background:url(../img/goShop.png) no-repeat right center;
+                            }
+                        }
+                        dd{
+                            width:540px;
+                            padding:10px;
+                            float:left;
+                            
+                            #area{
+                                padding-right:15px;
+                                position:relative;
+                                height:24px;
+                                margin:0 5px;
+                                color:#333;
+                                background:url(../img/more.png) no-repeat right -28px;
+                                strong{
+                                    font-weight:400;
+                                }
+                                //省份的选择
+                                .pro{
+                                    position:absolute;
+                                    top:16px;
+                                    left:0px;
+                                    display:none;
+                                    width:200px;
+                                    padding:5px;
+                                    z-index: 6666;
+                                    background:#fff;
+                                    border:1px solid #ccc;
+                                    ol{
+                                        overflow: hidden;
+                                        li{
+                                            margin:5px;
+                                            float: left;
+                                            cursor:pointer;
+                                            padding:0 5px;
+                                            &:hover{
+                                                background:$color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .pp{
+                                width:50px;
+                                height:30px;
+                                position:relative;
+                                display:inline-block;
+                                #num{
+                                    width:40px;
+                                    height:30px;
+                                    text-align:center;
+                                   
+                                }//数量的输入框
+                                #plus,#minus{
+                                    position:absolute;
+                                    display:block;
+                                    width:15px;
+                                    height:15px;
+                                    right:-10px;
+                                    border:1px solid #ccc;
+                                }
+                                #plus{
+                                    top:0px;
+                                    background:url(../img/more.png) no-repeat 3px 5px;
+                                }//数量的加号
+                                #minus{
+                                    top:17px;
+                                    background:url(../img/more.png) no-repeat 3px -28px;
+                                }//数量的加号
+                            }
+                           
+                            span{
+                                margin:0 15px;
+                                color:$color;
+                            }
+                            ul{
+                                width:540px;
+                                overflow:hidden;
+                                li{
+                                   border:1px solid #ccc;
+                                   float:left; 
+                                   margin:5px;
+                                   padding:0 5px;
+                                   
+                                }
+                                .check{
+                                     border:1px solid $color; 
+                                     a{
+                                         color:$color;
+                                         font-weight:600;
+                                     }                                
+                                }
+                            }                         
                         }
                     }
-                     
-                    p{
-                        width:600px;
-                        height:40px;
-                        margin:5px 0;
-                        position:relative;
-                        b{
-                            display:inline-block;
-                            height:40px;
-                            line-height:40px;
-                            font-weight:500;
-                            margin-right:10px;
-                        }
-                        font{
-                            display: inline-block;
-                            height: 16px;
-                            line-height: 16px;
-                            border: 1px solid #ef8e8f;
-                            background: #fcebeb;
-                            color: #dc0f50;
-                            padding: 0 5px;
-                            border-radius: 1px;
-                            margin: 0 5px 0 0;
-                            position: relative;
-                            top: -5px;
-                        }
-                        em{
-                            display: block;
-                            color: #666;
-                            line-height: 16px;
-                            font-size: 18px;
-                            text-decoration: line-through;
-                        }
-                        .goShop{
-                            position: absolute;
-                            color: #c06;
-                            font-size: 14px;
-                            line-height: 22px;
-                            top: 25px;
-                            right: 27px;
-                            padding-right:30px;
-                            background:url(../img/goShop.png)no-repeat right center;
-                        }
-                        span{
-                            margin:0 10px;
-                        }
-                       label{
-                            display:inline-block;
-                            width:100px;
-                            .minus,.plus{
-                                display:inline-block;
-                                width:20px;
-                                height:20px;
-                                background:#eee;
-                                line-height:20px;
-                                font-size:16px;
-                                font-weight:bold;
-                                text-align: center;
-                                border:1px solid #bbb;float:left;
-                            }
-                            #buycount{
-                                width:40px;
-                                height:20px;
-                                border:1px solid #bbb;
-                                float:left;
-                                text-align:center;
-                            }
-                        } 
-                        #jian{
-                            color:$color;
-                            margin:0 5px;
-                        }
                         .s1{
                             display:inline-block;
                             padding-left:30px;
-                            margin:0 10px;
+                            margin:10px 10px 10px 0;
                             height:20px;
                             line-height:20px;
                             
@@ -323,4 +367,3 @@ section{
             }
         }
     }
-}

@@ -45,7 +45,7 @@
 							<li>
 								<input type="password" id="pwd1" placeholder="请输入图片验证码"/>
 								<em></em>
-								<img src="img/banner/fp1.jpg" alt="点击切换图片" id="ckimg"/>
+								<img src="img/yzm/0.html.png" alt="点击切换图片" id="ckimg"/>
 							</li>
 							<li>
 								<input type="password" id="pwd2" placeholder="请输入验证码"/>
@@ -65,23 +65,5 @@
 		<footer></footer>
 	</body>
 	<script src="js/jquery-1.8.3.min.js" ></script>
-	<script>
-		$(function(){
-			$("header").load("top.html");
-			$("footer").load("footer.html");
-			//用户登录和快捷登录 的点击事件
-			$("#userlg").click(function(){
-				$("#userlg i").addClass("active");
-				$("#quiklg i").removeClass("active");
-				$("#first").css({"display":"block"});
-				$("#quik").css({"display":"none"});
-			});
-			$("#quiklg").click(function(){
-				$("#quiklg i").addClass("active");
-				$("#userlg i").removeClass("active");
-				$("#first").css({"display":"none"});
-				$("#quik").css({"display":"block"});
-			});
-		});
-	</script>
+	<script src="js/login.js"></script>
 </html>

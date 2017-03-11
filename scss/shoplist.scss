@@ -46,6 +46,7 @@ section{
                 height:560px;
                 border:1px solid #ccc;
                 display:none;
+                z-index: 5555;
                 a{
                     display:block;
                     height:40px;
@@ -235,13 +236,16 @@ section{
         .show{
             width:940px;
             padding:8px;
-            #goodshow{
+            overflow:hidden;   
+            margin-bottom:15px;         
+            ul{
                 width:940px;
+                overflow:hidden;
                 li{
                     width:220px;
                     height:314px;
                     float:left;
-                    margin-bottom:20px;
+                    margin-bottom:25px;
                     margin-right:15px;
                     a{
                         display:block;
@@ -260,6 +264,7 @@ section{
                         }
                         p{
                             height: 24px;
+                            width:180px;
                             line-height: 24px;
                             font-size: 20px;
                             color: #e11f24;
@@ -289,6 +294,9 @@ section{
                 color: #fff;
                 background: #dc0f50;
             }
+            p{
+                display:inline-block;
+            }
             a{
                 display: inline-block;
                 padding: 0 15px;
@@ -311,6 +319,9 @@ section{
                 font-size: 14px;
                 color: #666;
                 margin-right: 10px;
+                #count{
+                    margin:0 5px;
+                }
             }
             input{
                 width: 34px;

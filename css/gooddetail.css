@@ -187,115 +187,143 @@ section {
         .section .details .show .s-right h3 {
           color: #333;
           font-size: 20px;
-          height: 54px;
           line-height: 30px;
           padding: 7px 0;
           border-bottom: 1px solid #d6d6d6; }
         .section .details .show .s-right .g-list {
           width: 630px; }
-          .section .details .show .s-right .g-list #price {
-            height: 60px; }
-            .section .details .show .s-right .g-list #price b {
-              color: #dc0f50;
-              font-size: 30px;
-              margin-right: 8px; }
-          .section .details .show .s-right .g-list p {
-            width: 600px;
-            height: 40px;
-            margin: 5px 0;
-            position: relative; }
-            .section .details .show .s-right .g-list p b {
-              display: inline-block;
-              height: 40px;
-              line-height: 40px;
-              font-weight: 500;
-              margin-right: 10px; }
-            .section .details .show .s-right .g-list p font {
-              display: inline-block;
-              height: 16px;
-              line-height: 16px;
-              border: 1px solid #ef8e8f;
-              background: #fcebeb;
-              color: #dc0f50;
-              padding: 0 5px;
-              border-radius: 1px;
-              margin: 0 5px 0 0;
-              position: relative;
-              top: -5px; }
-            .section .details .show .s-right .g-list p em {
-              display: block;
-              color: #666;
-              line-height: 16px;
-              font-size: 18px;
-              text-decoration: line-through; }
-            .section .details .show .s-right .g-list p .goShop {
-              position: absolute;
-              color: #c06;
-              font-size: 14px;
-              line-height: 22px;
-              top: 25px;
-              right: 27px;
-              padding-right: 30px;
-              background: url(../img/goShop.png) no-repeat right center; }
-            .section .details .show .s-right .g-list p span {
-              margin: 0 10px; }
-            .section .details .show .s-right .g-list p label {
-              display: inline-block;
-              width: 100px; }
-              .section .details .show .s-right .g-list p label .minus, .section .details .show .s-right .g-list p label .plus {
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                background: #eee;
-                line-height: 20px;
-                font-size: 16px;
+          .section .details .show .s-right .g-list dl {
+            width: 630px;
+            clear: both; }
+            .section .details .show .s-right .g-list dl dt {
+              width: 70px;
+              float: left;
+              padding: 10px 0; }
+            .section .details .show .s-right .g-list dl dd:first-child {
+              position: relative; }
+              .section .details .show .s-right .g-list dl dd:first-child b {
+                display: block;
                 font-weight: bold;
-                text-align: center;
-                border: 1px solid #bbb;
-                float: left; }
-              .section .details .show .s-right .g-list p label #buycount {
-                width: 40px;
-                height: 20px;
-                border: 1px solid #bbb;
-                float: left;
-                text-align: center; }
-            .section .details .show .s-right .g-list p #jian {
-              color: #dc0f50;
-              margin: 0 5px; }
-            .section .details .show .s-right .g-list p .s1 {
-              display: inline-block;
-              padding-left: 30px;
-              margin: 0 10px;
-              height: 20px;
-              line-height: 20px; }
-            .section .details .show .s-right .g-list p .s1:nth-child(1) {
-              background: url(../img/icon_1.png) no-repeat 5px 0; }
-            .section .details .show .s-right .g-list p .s1:nth-child(2) {
-              background: url(../img/icon_1.png) no-repeat 5px -40px; }
-            .section .details .show .s-right .g-list p .s1:nth-child(3) {
-              background: url(../img/icon_1.png) no-repeat 5px -20px; }
-          .section .details .show .s-right .g-list .add {
-            width: 600px;
-            line-height: 40px; }
-            .section .details .show .s-right .g-list .add a:first-child {
-              display: inline-block;
-              width: 110px;
-              height: 40px;
-              padding-left: 50px;
-              line-height: 40px;
-              font-weight: 600;
-              font-size: 20px;
-              color: #fff;
-              background: #fea829 url(../img/gou.png) no-repeat 10px 8px; }
-            .section .details .show .s-right .g-list .add a:nth-child(2) {
-              display: inline-block;
-              width: 110px;
-              height: 40px;
-              font-weight: 600;
-              text-align: center;
-              font-size: 20px;
-              color: #fff;
-              margin: 0 15px;
-              background: #dc0f50; }
+                font-size: 30px;
+                line-height: 32px;
+                color: #dc0f50; }
+              .section .details .show .s-right .g-list dl dd:first-child i {
+                display: block;
+                font-size: 16px;
+                margin-left: 15px;
+                text-decoration: line-through; }
+              .section .details .show .s-right .g-list dl dd:first-child a {
+                display: block;
+                position: absolute;
+                right: 25px;
+                color: #dc0f50;
+                top: 20%;
+                padding-right: 30px;
+                background: url(../img/goShop.png) no-repeat right center; }
+            .section .details .show .s-right .g-list dl dd {
+              width: 540px;
+              padding: 10px;
+              float: left; }
+              .section .details .show .s-right .g-list dl dd #area {
+                padding-right: 15px;
+                position: relative;
+                height: 24px;
+                margin: 0 5px;
+                color: #333;
+                background: url(../img/more.png) no-repeat right -28px; }
+                .section .details .show .s-right .g-list dl dd #area strong {
+                  font-weight: 400; }
+                .section .details .show .s-right .g-list dl dd #area .pro {
+                  position: absolute;
+                  top: 16px;
+                  left: 0px;
+                  display: none;
+                  width: 200px;
+                  padding: 5px;
+                  z-index: 6666;
+                  background: #fff;
+                  border: 1px solid #ccc; }
+                  .section .details .show .s-right .g-list dl dd #area .pro ol {
+                    overflow: hidden; }
+                    .section .details .show .s-right .g-list dl dd #area .pro ol li {
+                      margin: 5px;
+                      float: left;
+                      cursor: pointer;
+                      padding: 0 5px; }
+                      .section .details .show .s-right .g-list dl dd #area .pro ol li:hover {
+                        background: #dc0f50; }
+              .section .details .show .s-right .g-list dl dd .pp {
+                width: 50px;
+                height: 30px;
+                position: relative;
+                display: inline-block; }
+                .section .details .show .s-right .g-list dl dd .pp #num {
+                  width: 40px;
+                  height: 30px;
+                  text-align: center; }
+                .section .details .show .s-right .g-list dl dd .pp #plus, .section .details .show .s-right .g-list dl dd .pp #minus {
+                  position: absolute;
+                  display: block;
+                  width: 15px;
+                  height: 15px;
+                  right: -10px;
+                  border: 1px solid #ccc; }
+                .section .details .show .s-right .g-list dl dd .pp #plus {
+                  top: 0px;
+                  background: url(../img/more.png) no-repeat 3px 5px; }
+                .section .details .show .s-right .g-list dl dd .pp #minus {
+                  top: 17px;
+                  background: url(../img/more.png) no-repeat 3px -28px; }
+              .section .details .show .s-right .g-list dl dd span {
+                margin: 0 15px;
+                color: #dc0f50; }
+              .section .details .show .s-right .g-list dl dd ul {
+                width: 540px;
+                overflow: hidden; }
+                .section .details .show .s-right .g-list dl dd ul li {
+                  border: 1px solid #ccc;
+                  float: left;
+                  margin: 5px;
+                  padding: 0 5px; }
+                .section .details .show .s-right .g-list dl dd ul .check {
+                  border: 1px solid #dc0f50; }
+                  .section .details .show .s-right .g-list dl dd ul .check a {
+                    color: #dc0f50;
+                    font-weight: 600; }
+          .section .details .show .s-right .g-list .s1 {
+            display: inline-block;
+            padding-left: 30px;
+            margin: 10px 10px 10px 0;
+            height: 20px;
+            line-height: 20px; }
+          .section .details .show .s-right .g-list .s1:nth-child(1) {
+            background: url(../img/icon_1.png) no-repeat 5px 0; }
+          .section .details .show .s-right .g-list .s1:nth-child(2) {
+            background: url(../img/icon_1.png) no-repeat 5px -40px; }
+          .section .details .show .s-right .g-list .s1:nth-child(3) {
+            background: url(../img/icon_1.png) no-repeat 5px -20px; }
+        .section .details .show .s-right .add {
+          width: 600px;
+          line-height: 40px; }
+          .section .details .show .s-right .add a:first-child {
+            display: inline-block;
+            width: 110px;
+            height: 40px;
+            padding-left: 50px;
+            line-height: 40px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            background: #fea829 url(../img/gou.png) no-repeat 10px 8px; }
+          .section .details .show .s-right .add a:nth-child(2) {
+            display: inline-block;
+            width: 110px;
+            height: 40px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            margin: 0 15px;
+            background: #dc0f50; }
 
 /*# sourceMappingURL=gooddetail.css.map */

@@ -54,7 +54,7 @@
 						<dl>
 							<dt>品牌</dt>
 							<dd>
-								<a href="###"></a>
+								<a href="###">全部</a>
 							</dd>
 						</dl>
 					</div>
@@ -76,83 +76,24 @@
 					<!--//展示商品-->
 					<div class="show">
 						<ul id="goodshow">
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
-							<li>
-								 <a><img src="img/goods/goods11.jpg" alt="">
-						            <b >东芝32英寸安卓智能LED电视 32L2600C</b>
-						            <p><i>￥2098</i>￥1399</p>
-						            <font><span><strong>赠品</strong></span>月销125件</font>
-						        </a>
-							</li>
+							
 						</ul>
 					</div>
 					<!--商品过滤结束-->
 					<!--商品分页开始-->
 					<div class="pag">
 						<span id="PaginationTB">
-							<a class="curr" >
+							<a class="curr paging" >
 							<span id="spprev">上一页</span>
 							</a>
-							<a  class="curr">1</a>
-							<a  href="#">2</a>
-							<a href="#">3</a>
-							<a href="#">4</a>
-							<span>...</span><a href="#">62</a>
-							<a href="#">63</a>
-							<a href="#">
+							<p id="page">
+							</p>
+							<a href="###" class="paging">
 							<span id="spnext">下一页</span>
 							</a>
 						</span>
 						<span id="PageSet">
-							<em>共63页 到第<input id="txtPageCount" type="text" value="1"/>页</em>
+							<em>共<i id="count"></i> 到第<input id="txtPageCount" type="text" value="1"/>页</em>
 							<a style="cursor:pointer">确定</a>
 							</span>
 					</div>
@@ -246,6 +187,20 @@
 								</a>
 							</li>
 							<li>
+								<a href="goodDetail.html">
+									<div class="box"><img src="img/goods/l2.jpg"  /></div>
+									<span>汇龍元 巨龙东北有机绿小米400g</span>
+									<i>￥39<em>￥48</em></i>
+								</a>
+							</li>
+							<li>
+								<a href="###">
+									<div class="box"><img src="img/goods/l2.jpg"  /></div>
+									<span>汇龍元 巨龙东北有机绿小米400g</span>
+									<i>￥39<em>￥48</em></i>
+								</a>
+							</li>
+							<li>
 								<a href="###">
 									<div class="box"><img src="img/goods/l3.jpg"  /></div>
 									<span>施悦名 春夏刺绣修身长袖OL衬衫上衣</span>
@@ -305,15 +260,5 @@
 	</body>
 	<script src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/clickmove.js"></script>
-	<script>
-		$(function(){
-			$("header").load("top.html");
-			$("footer").load("footer.html");
-			var oUl3=MovePlay("#ul3","#next3","#prev3");
-			$(".filter li").on("click",function(){
-				$(".filter li:not(#on)").removeClass("curr");
-				$(this).addClass("curr");
-			});
-		});
-	</script>
+	<script src="js/shoplist.js"></script>
 </html>
