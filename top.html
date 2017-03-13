@@ -60,11 +60,18 @@
 					</div>
 					<div class="cart">
 						<a href="shopcart.html"><span>我的购物车</span></a>
-						<i>0</i>
+						<i id="number">0</i>
 					</div>
 				</div>
 			</div>
 			
 		</div>
 	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="js/cookie.js" ></script>
+	<script>
+		$(function(){
+			$("#number").html(getCookie("goodnum"));
+		})
+	</script>
 </html>

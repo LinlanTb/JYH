@@ -154,6 +154,8 @@ section {
         height: 120px;
         border-bottom: 1px solid #ccc;
         overflow: hidden; }
+        .section .shopcart ul li:hover {
+          color: #dc0f50; }
         .section .shopcart ul li span {
           display: block;
           float: left;

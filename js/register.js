@@ -26,13 +26,13 @@ function regist(pho,pic,pwd1,pwd2,yzm,chek,tijiao){
 	
 	$(pic+" ~ a").click(function(){
 		 random= Math.floor(Math.random()*7);
-		 console.log(random);
+//		 console.log(random);
 		$(pic+" ~ a img").attr("src","img/yzm/"+(random)+".html.png");
 		return random;
 	});
 	//验证码确认
 	$(pic).blur(function(){
-		console.log(random);
+//		console.log(random);
 		
 		if($(pic).val()){
 			if($(pic).val().toUpperCase()==arr[random]){
@@ -117,7 +117,20 @@ function regist(pho,pic,pwd1,pwd2,yzm,chek,tijiao){
 	
 	$(tijiao).click(function(){
 		if(fpho&&fpic&&fpwd1&&fpwd2&&fyzm){
-			location="tiaozhuan.html";
+			$.post("php/register.php",{
+					"userPhone":$(pho).val(),
+					"userPass":$(pwd1).val()
+				},
+				function(date){
+					if(date =="1"){
+						alert("用户名已经注册，请直接登录");
+					}else if(date =="0"){
+						location="tiaozhuan.html";
+					}
+					
+				}
+			)
+			
 		}
 	});
 }
