@@ -1,0 +1,332 @@
+@charset "utf-8";
+@import "base";
+$color:#dc0f50;
+section{
+    width:100%;position:relative;
+    hr{
+        position:absolute;
+        top:40px;
+        width:100%;
+        border:1px solid $color;
+    }
+}
+.section{
+    width:$width;
+    margin:0 auto;
+    //导航nav开始
+    nav{
+        width:$width;
+        height:40px;
+        background:#fff;
+        dt{
+            float:left;
+            width:234px;
+            height:40px;
+            font-size:14px;
+            color:#fff;
+            line-height:40px;
+            text-align:center;
+            margin-right:20px;
+            position:relative;
+            cursor:pointer;
+            background:#333 url(../img/nav_b_bg.jpg) no-repeat 200px center;
+            &:hover{
+                background:#333 url(../img/nav_a_bg.jpg) no-repeat 200px center;
+                .list{
+                    display:block;
+                    background:#fff;
+                }
+            }
+            //子菜单开始
+            .list{
+                position:absolute;
+                left:0;top:40px;
+                width:232px;
+                height:560px;
+                border:1px solid #ccc;
+                display:none;
+                z-index: 6666;
+                a{
+                    display:block;
+                    height:40px;
+                    text-align:center;
+                    line-height:40px;
+                    font-size:14px;color:#666;
+                    &:hover{
+                        background:$color;
+                    }
+                }
+            }
+            //子菜单结束
+        }
+        dd a{
+            float:left;
+            margin:0 15px; 
+            line-height:40px;
+            font-size:14px;  
+            &:hover{
+                color:$color;
+            } 
+        }
+    }//导航nav结束
+    .good-list{
+        width:$width;
+        height:362px;
+        margin-top:10px;
+        margin-bottom:30px;
+        //标题
+        .hd{
+            width:$width;
+            height:32px;
+            margin-bottom:30px;
+            position:relative;
+            h2{
+                position:absolute;
+                left:0;
+                height:26px;
+                padding:4px 5px;
+                background:#fff;
+                font-size:24px;
+                color:#333;
+            }
+            .line{
+                width:100%;
+                height:30px;
+                border-bottom:1px solid #ccc;
+            }
+            
+        }
+        
+        //选项卡开始
+        .option{
+            overflow: hidden;
+            height: 40px;
+            margin: -16px 0 14px 0;
+            .curr{
+                position: relative;
+                z-index: 10;
+                background: $color;
+            }
+            li{
+                height: 30px;
+                font-size: 14px;
+                padding: 5px 0 5px 30px;
+                color: #fff;
+                width: 86px;
+                background: #333 url(../img/xian.gif) no-repeat left center;
+                float: left;
+                line-height: 15px;
+                margin-left: -1px;
+                i,em{
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        //选项卡结束
+        //商品
+        #glists1{
+            width:$width;
+            height:300px;
+            position:relative;
+            overflow: hidden;
+            ul{
+                min-width:9999px;
+                height: 298px;
+                margin:0 20px;
+                position:absolute;
+                left:0;top:0;
+                li{
+                    float:left;
+                    width:200px;
+                    border:2px solid #fff;
+                    margin:0 21px 0 10px;
+                    transition: all 2s;
+                    &:hover{
+                        border:2px solid $color;
+                    }
+                    .box{
+                        width:200px;
+                        height:200px;
+                        overflow:hidden;
+                        img{
+                            width:200px;
+                            height:200px;
+                            transition: all 2s;
+                            &:hover{
+                                transform: scale(1.3,1.3);
+                            }
+                        }
+                    }
+                    p{
+                        width:200px;
+                        height:24px;
+                        position:relative;
+                        margin-top:-24px;
+                        background:rgba(0,0,0,0.6);
+                        text-align:center;
+                        color:#fff;
+                    }
+                    span{
+                       width:190px;
+                       padding:5px;
+                       height:34px;
+                       font-size:14px;
+                       line-height:18px;
+                       color:#333;
+                       text-overflow: ellipsis;
+                       display:block;
+                       overflow:hidden;
+                    }
+                    i{
+                        display:block;
+                        font-size:20px;
+                        color:$color;
+                        em{
+                            color:#666;
+                            padding:0 10px;
+                            font-size:12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                    &:hover span{
+                        color:$color;
+                    }
+                }
+            }
+            #prev1,#next1{
+                width:30px;
+                height:60px;
+                font-size:30px;
+                color:#fff;
+                display:block;
+                line-height:60px;
+                text-align: center;
+                background:rgba(0,0,0,0.6);
+                position:absolute;
+                top:60px;
+            }
+            #prev1{
+                left:0;
+                
+            }
+            #next1{
+                right:-2px;
+            }
+        }
+      
+    }  //tv直播结束
+    
+    .like-list{
+        width:$width;
+        height:362px;
+        margin-bottom:30px;
+        //标题
+        .hd{
+            width:$width;
+            height:32px;
+            margin-bottom:30px;
+            position:relative;
+            h2{
+                position:absolute;
+                left:0;
+                height:26px;
+                padding:4px 5px;
+                background:#fff;
+                font-size:24px;
+                color:#333;
+            }
+            .line{
+                width:100%;
+                height:30px;
+                border-bottom:1px solid #ccc;
+            }
+            
+        }
+        //商品
+        #glists3{
+            width:$width;
+            height:300px;
+            position:relative;
+            overflow: hidden;
+            ul{
+                min-width:9999px;
+                height: 298px;
+                margin:0 20px;
+                position:absolute;
+                left:0;top:0;
+                li{
+                    float:left;
+                    width:200px;
+                    position:relative;
+                    border:2px solid #fff;
+                    margin:0 21px 0 10px;
+                    transition: all 2s;
+                    &:hover{
+                        border:2px solid $color;
+                    }
+                    .box{
+                        width:200px;
+                        height:200px;
+                        overflow:hidden;
+                        img{
+                            width:200px;
+                            height:200px;
+                            transition: all 2s;
+                            &:hover{
+                                transform: scale(1.3,1.3);
+                            }
+                        }
+                    }
+                    span{
+                       width:130px;
+                       padding:5px 55px 5px 5px;
+                       height:34px;
+                       font-size:14px;
+                       line-height:18px;
+                       color:#333;
+                       display:block;
+                       overflow:hidden;
+                    }
+                    i{
+                        width:130px;
+                        display:block;
+                        font-size:20px;
+                        padding:5px 55px 5px 5px;
+                        color:$color;
+                        em{
+                            color:#666;
+                            padding:0 10px;
+                            font-size:12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                    &:hover span{
+                        color:$color;
+                    }
+                }
+            }
+            #prev,#next{
+                width:30px;
+                height:60px;
+                font-size:30px;
+                color:#fff;
+                display:block;
+                line-height:60px;
+                text-align: center;
+                background:rgba(0,0,0,0.6);
+                position:absolute;
+                top:60px;
+            }
+            #prev{
+                left:0;
+                
+            }
+            #next{
+                right:-2px;
+            }
+        }
+        
+    }//猜你喜欢结束
+}

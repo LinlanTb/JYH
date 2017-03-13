@@ -1,0 +1,299 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/24px "微软雅黑";
+  color: #666; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+ul, li, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #666; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+i, em {
+  font-style: normal; }
+
+input, textarea, select, button {
+  outline: none;
+  resize: none; }
+
+section {
+  width: 100%;
+  position: relative; }
+  section hr {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    border: 1px solid #dc0f50; }
+
+.section {
+  width: 1200px;
+  margin: 0 auto; }
+  .section nav {
+    width: 1200px;
+    height: 40px;
+    background: #fff; }
+    .section nav dt {
+      float: left;
+      width: 234px;
+      height: 40px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      margin-right: 20px;
+      position: relative;
+      cursor: pointer;
+      background: #333 url(../img/nav_b_bg.jpg) no-repeat 200px center; }
+      .section nav dt:hover {
+        background: #333 url(../img/nav_a_bg.jpg) no-repeat 200px center; }
+        .section nav dt:hover .list {
+          display: block;
+          background: #fff; }
+      .section nav dt .list {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 232px;
+        height: 560px;
+        border: 1px solid #ccc;
+        display: none;
+        z-index: 6666; }
+        .section nav dt .list a {
+          display: block;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 14px;
+          color: #666; }
+          .section nav dt .list a:hover {
+            background: #dc0f50; }
+    .section nav dd a {
+      float: left;
+      margin: 0 15px;
+      line-height: 40px;
+      font-size: 14px; }
+      .section nav dd a:hover {
+        color: #dc0f50; }
+  .section .good-list {
+    width: 1200px;
+    height: 362px;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .section .good-list .hd {
+      width: 1200px;
+      height: 32px;
+      margin-bottom: 30px;
+      position: relative; }
+      .section .good-list .hd h2 {
+        position: absolute;
+        left: 0;
+        height: 26px;
+        padding: 4px 5px;
+        background: #fff;
+        font-size: 24px;
+        color: #333; }
+      .section .good-list .hd .line {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid #ccc; }
+    .section .good-list .option {
+      overflow: hidden;
+      height: 40px;
+      margin: -16px 0 14px 0; }
+      .section .good-list .option .curr {
+        position: relative;
+        z-index: 10;
+        background: #dc0f50; }
+      .section .good-list .option li {
+        height: 30px;
+        font-size: 14px;
+        padding: 5px 0 5px 30px;
+        color: #fff;
+        width: 86px;
+        background: #333 url(../img/xian.gif) no-repeat left center;
+        float: left;
+        line-height: 15px;
+        margin-left: -1px; }
+        .section .good-list .option li i, .section .good-list .option li em {
+          display: block;
+          font-size: 12px; }
+    .section .good-list #glists1 {
+      width: 1200px;
+      height: 300px;
+      position: relative;
+      overflow: hidden; }
+      .section .good-list #glists1 ul {
+        min-width: 9999px;
+        height: 298px;
+        margin: 0 20px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .section .good-list #glists1 ul li {
+          float: left;
+          width: 200px;
+          border: 2px solid #fff;
+          margin: 0 21px 0 10px;
+          transition: all 2s; }
+          .section .good-list #glists1 ul li:hover {
+            border: 2px solid #dc0f50; }
+          .section .good-list #glists1 ul li .box {
+            width: 200px;
+            height: 200px;
+            overflow: hidden; }
+            .section .good-list #glists1 ul li .box img {
+              width: 200px;
+              height: 200px;
+              transition: all 2s; }
+              .section .good-list #glists1 ul li .box img:hover {
+                transform: scale(1.3, 1.3); }
+          .section .good-list #glists1 ul li p {
+            width: 200px;
+            height: 24px;
+            position: relative;
+            margin-top: -24px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: #fff; }
+          .section .good-list #glists1 ul li span {
+            width: 190px;
+            padding: 5px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+            text-overflow: ellipsis;
+            display: block;
+            overflow: hidden; }
+          .section .good-list #glists1 ul li i {
+            display: block;
+            font-size: 20px;
+            color: #dc0f50; }
+            .section .good-list #glists1 ul li i em {
+              color: #666;
+              padding: 0 10px;
+              font-size: 12px;
+              text-decoration: line-through; }
+          .section .good-list #glists1 ul li:hover span {
+            color: #dc0f50; }
+      .section .good-list #glists1 #prev1, .section .good-list #glists1 #next1 {
+        width: 30px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 60px; }
+      .section .good-list #glists1 #prev1 {
+        left: 0; }
+      .section .good-list #glists1 #next1 {
+        right: -2px; }
+  .section .like-list {
+    width: 1200px;
+    height: 362px;
+    margin-bottom: 30px; }
+    .section .like-list .hd {
+      width: 1200px;
+      height: 32px;
+      margin-bottom: 30px;
+      position: relative; }
+      .section .like-list .hd h2 {
+        position: absolute;
+        left: 0;
+        height: 26px;
+        padding: 4px 5px;
+        background: #fff;
+        font-size: 24px;
+        color: #333; }
+      .section .like-list .hd .line {
+        width: 100%;
+        height: 30px;
+        border-bottom: 1px solid #ccc; }
+    .section .like-list #glists3 {
+      width: 1200px;
+      height: 300px;
+      position: relative;
+      overflow: hidden; }
+      .section .like-list #glists3 ul {
+        min-width: 9999px;
+        height: 298px;
+        margin: 0 20px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .section .like-list #glists3 ul li {
+          float: left;
+          width: 200px;
+          position: relative;
+          border: 2px solid #fff;
+          margin: 0 21px 0 10px;
+          transition: all 2s; }
+          .section .like-list #glists3 ul li:hover {
+            border: 2px solid #dc0f50; }
+          .section .like-list #glists3 ul li .box {
+            width: 200px;
+            height: 200px;
+            overflow: hidden; }
+            .section .like-list #glists3 ul li .box img {
+              width: 200px;
+              height: 200px;
+              transition: all 2s; }
+              .section .like-list #glists3 ul li .box img:hover {
+                transform: scale(1.3, 1.3); }
+          .section .like-list #glists3 ul li span {
+            width: 130px;
+            padding: 5px 55px 5px 5px;
+            height: 34px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #333;
+            display: block;
+            overflow: hidden; }
+          .section .like-list #glists3 ul li i {
+            width: 130px;
+            display: block;
+            font-size: 20px;
+            padding: 5px 55px 5px 5px;
+            color: #dc0f50; }
+            .section .like-list #glists3 ul li i em {
+              color: #666;
+              padding: 0 10px;
+              font-size: 12px;
+              text-decoration: line-through; }
+          .section .like-list #glists3 ul li:hover span {
+            color: #dc0f50; }
+      .section .like-list #glists3 #prev, .section .like-list #glists3 #next {
+        width: 30px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 60px; }
+      .section .like-list #glists3 #prev {
+        left: 0; }
+      .section .like-list #glists3 #next {
+        right: -2px; }
+
+/*# sourceMappingURL=TVplay.css.map */

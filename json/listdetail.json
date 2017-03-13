@@ -1,0 +1,62 @@
+[
+	{
+		"data_id":1001,
+		"images":"img/detail/lx1.jpg",
+		"word":"GNC健安喜 美国加强型叶黄素软胶囊40mg30粒 ",
+		"price_new":"199",
+		"price_old":"330",
+		"color":[],
+		"size":[],
+		"produce":"澳大利亚",
+		"img":["img/detail/swiss1.jpg","img/detail/swiss2.jpg","img/detail/swiss3.jpg","img/detail/swiss4.jpg","img/detail/swiss5.jpg","img/detail/swiss6.jpg"],
+		"pimg":["img/detail/swi1.jpg","img/detail/swi2.jpg","img/detail/swi3.jpg","img/detail/swi4.jpg"]
+	},
+	{
+		"data_id":1002,
+		"images":"img/detail/swiss1.jpg",
+		"word":"President复古商务铝框拉杆箱（颜色可选）赠箱套*2+旅行收纳四件套",
+		"price_new":"¥849.00",
+		"price_old":"¥1899.00",
+		"color":[],
+		"size":["20寸","22寸","26寸","28寸"],
+		"produce":"浙江",
+		"img":["img/detail/lx1.jpg","img/detail/lx2.jpg","img/detail/lx3.jpg","img/detail/lx4.jpg"],
+		"pimg":["img/detail/lxx1.jpg","img/detail/lxx2.jpg","img/detail/lxx3.jpg","img/detail/lxx4.jpg","img/detail/lxx5.jpg","img/detail/lxx6.jpg","img/detail/lxx7.jpg","img/detail/lxx8.jpg","img/detail/lxx9.jpg"]
+	},
+	{
+		"data_id":1003,
+		"images":"img/detail/ms1.jpg",
+		"word":"密丝黛瑞 欧风百搭包蝴蝶包+斜挎包 赠零钱包+证件包+化妆包（颜色可选）",
+		"price_new":"¥339.00",
+		"price_old":"¥599.00",
+		"color":["枚红色","金色"],
+		"size":[],
+		"produce":"浙江",
+		"img":["img/detail/ms1.jpg","img/detail/ms2.jpg","img/detail/ms3.jpg"],
+		"pimg":["img/detail/mss1.jpg","img/detail/mss2.jpg","img/detail/mss3.jpg","img/detail/mss4.jpg","img/detail/mss5.jpg","img/detail/mss6.jpg","img/detail/mss7.jpg"]
+	},
+	{
+		"data_id":1004,
+		"images":"img/detail/jc1.jpg",
+		"word":"锦蚕龙凤呈祥十件套 赠贡缎提花四件套+双层拉舍尔毯",
+		"price_new":"¥849.00",
+		"price_old":"¥1499.00",
+		"color":["红色","金色"],
+		"size":[],
+		"produce":"浙江",
+		"img":["img/detail/jc1.jpg","img/detail/jc2.jpg","img/detail/jc3.jpg","img/detail/jc4.jpg","img/detail/jc5.jpg"],
+		"pimg":["img/detail/jcc1.jpg","img/detail/jcc2.jpg","img/detail/jcc3.jpg","img/detail/jcc4.jpg","img/detail/jcc5.jpg","img/detail/jcc6.jpg","img/detail/jcc7.jpg"]
+	},
+	{
+		"data_id":1005,
+		"images":"img/detail/lo1.jpg",
+		"word":"朗圣洁生物活性固齿修复牙膏60g*5 赠20g*7、试用装20g*1",
+		"price_new":"¥299.00",
+		"price_old":"¥449.00",
+		"color":[],
+		"size":[],
+		"produce":"浙江",
+		"img":["img/detail/lo1.jpg","img/detail/lo2.jpg","img/detail/lo3.jpg","img/detail/lo4.jpg","img/detail/lo5.jpg"],
+		"pimg":["img/detail/lusjoy1.jpg","img/detail/lusjoy2.jpg","img/detail/lusjoy3.jpg","img/detail/lusjoy4.jpg","img/detail/lusjoy5.jpg","img/detail/lusjoy6.jpg","img/detail/lusjoy7.jpg","img/detail/lusjoy8.jpg","img/detail/lusjoy9.jpg","img/detail/lusjoy10.jpg"]
+	}
+]

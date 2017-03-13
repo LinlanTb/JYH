@@ -234,21 +234,25 @@ section {
         width: 940px;
         overflow: hidden; }
         .section .allgoods .show ul li {
-          width: 220px;
-          height: 314px;
+          width: 206px;
+          height: 304px;
           float: left;
+          padding: 5px;
           margin-bottom: 25px;
+          border: 2px solid #fff;
           margin-right: 15px; }
+          .section .allgoods .show ul li:hover {
+            border: 2px solid #dc0f50; }
           .section .allgoods .show ul li a {
             display: block; }
             .section .allgoods .show ul li a img {
-              width: 214px;
-              height: 214px; }
+              width: 204px;
+              height: 204px; }
             .section .allgoods .show ul li a b {
               padding: 5px 0;
               overflow: hidden;
-              height: 40px;
-              line-height: 20px;
+              height: 35px;
+              line-height: 17px;
               font-size: 14px;
               color: #333;
               display: block; }

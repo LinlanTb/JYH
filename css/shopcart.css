@@ -70,7 +70,8 @@ section {
         width: 232px;
         height: 560px;
         border: 1px solid #ccc;
-        display: none; }
+        display: none;
+        z-index: 6666; }
         .section nav dt .list a {
           display: block;
           height: 40px;
@@ -89,14 +90,176 @@ section {
         color: #dc0f50; }
   .section .kong {
     height: 150px;
+    width: 1200px;
+    margin: 0 auto;
     text-align: center;
     background: url(../img/gwc_kong.png) no-repeat center 111px;
     padding-top: 300px;
     line-height: 64px;
+    display: none;
     font-size: 14px;
     color: #333; }
     .section .kong a {
       color: #dc0f50;
       margin: 0 5px; }
+  .section .mycart {
+    width: 1200px;
+    overflow: hidden;
+    margin: 15px 0; }
+    .section .mycart i {
+      display: block;
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      background: url(../img/ind.png) no-repeat -100px -728px; }
+    .section .mycart h3 {
+      width: 200px;
+      float: left;
+      font-weight: 500; }
+    .section .mycart a {
+      display: block;
+      float: right; }
+      .section .mycart a:hover {
+        color: #dc0f50; }
+  .section .shopcart {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc; }
+    .section .shopcart .list-top {
+      width: 1180px;
+      height: 40px;
+      margin-bottom: 15px; }
+      .section .shopcart .list-top label {
+        width: 160px; }
+      .section .shopcart .list-top span:first-child {
+        width: 150px;
+        text-align: left; }
+        .section .shopcart .list-top span:first-child input {
+          margin: 0 5px; }
+      .section .shopcart .list-top span:nth-child(2) {
+        width: 260px;
+        margin-right: 260px; }
+      .section .shopcart .list-top span {
+        width: 122px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center; }
+    .section .shopcart ul {
+      width: 1180px; }
+      .section .shopcart ul li {
+        width: 1180px;
+        height: 120px;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden; }
+        .section .shopcart ul li span {
+          display: block;
+          float: left;
+          line-height: 120px;
+          width: 122px;
+          height: 120px;
+          text-align: center; }
+        .section .shopcart ul li span:first-child {
+          width: 178px;
+          position: relative;
+          line-height: 30px; }
+          .section .shopcart ul li span:first-child label {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 35px;
+            left: 5px; }
+          .section .shopcart ul li span:first-child img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px 15px 10px 30px; }
+        .section .shopcart ul li span:nth-child(2) {
+          width: 240px;
+          height: 100px;
+          padding: 10px;
+          text-align: left; }
+        .section .shopcart ul li span:nth-child(3) {
+          width: 240px;
+          text-align: left; }
+          .section .shopcart ul li span:nth-child(3) p {
+            line-height: 60px; }
+        .section .shopcart ul li span:nth-child(5) {
+          width: 122px;
+          position: relative; }
+          .section .shopcart ul li span:nth-child(5) input {
+            width: 40px;
+            text-align: center;
+            height: 20px;
+            border: 1px solid #ccc;
+            outline: none; }
+          .section .shopcart ul li span:nth-child(5) #plus, .section .shopcart ul li span:nth-child(5) #minus {
+            position: absolute;
+            top: 50px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            border: 1px solid #ccc; }
+          .section .shopcart ul li span:nth-child(5) #plus {
+            left: 81px; }
+          .section .shopcart ul li span:nth-child(5) #minus {
+            left: 19px; }
+        .section .shopcart ul li span:last-child b {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background: url(../img/del.png) no-repeat 0 -25px; }
+          .section .shopcart ul li span:last-child b:hover {
+            background: url(../img/del.png) no-repeat 0 0; }
+  .section .box {
+    width: 1200px;
+    height: 40px;
+    margin: 30px 0;
+    line-height: 40px;
+    overflow: hidden;
+    border: 1px solid #ccc; }
+    .section .box a {
+      display: block;
+      float: right;
+      width: 120px;
+      height: 30px;
+      margin: 5px 10px 5px 30px;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      background: #dc0f50;
+      color: #fff; }
+    .section .box span {
+      width: 150px;
+      display: block;
+      float: right;
+      font-size: 16px;
+      color: #000; }
+      .section .box span i {
+        margin: 0 10px;
+        color: #dc0f50; }
+    .section .box label {
+      display: block;
+      width: 50px;
+      float: left;
+      margin: 0 15px; }
+    .section .box b {
+      display: block;
+      width: 150px;
+      height: 25px;
+      float: left;
+      margin: 8px;
+      line-height: 25px;
+      padding-left: 20px;
+      background: url(../img/del.png) no-repeat left -23px; }
+      .section .box b:hover {
+        background: url(../img/del.png) no-repeat left 0; }
 
 /*# sourceMappingURL=shopcart.css.map */

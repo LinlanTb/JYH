@@ -15,7 +15,8 @@ $fontColor:#dc0f50;
     background:#e5e5e5;
 }
 #top{
-    width:1200px;
+    width:1190px;
+    padding:0 10px;
     height:30px;
     background:#e5e5e5;
     margin:0 auto;
@@ -32,7 +33,7 @@ $fontColor:#dc0f50;
         }
     }
     div{
-        width:1100px;
+        width:1090px;
         float:right;
         span{
             cursor: pointer;
@@ -212,6 +213,11 @@ $fontColor:#dc0f50;
         float:right;
         width:110px;height:42px;
         border:1px solid #ccc;
+        a{
+            display:block;
+            width:70px;
+            height:40px;
+        }
         span{
             display:inline-block;
             width:70px;

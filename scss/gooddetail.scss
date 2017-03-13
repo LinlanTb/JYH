@@ -19,6 +19,7 @@ section{
     nav{
         width:$width;
         height:40px;
+        background:#fff;
         dt{
             float:left;
             width:234px;
@@ -73,6 +74,7 @@ section{
     .details{
         width: 1200px;
         margin: 0 auto;
+       
         h2{
             height: 40px;
             line-height: 40px;
@@ -245,7 +247,7 @@ section{
                                 .pro{
                                     position:absolute;
                                     top:16px;
-                                    left:0px;
+                                    left:0;
                                     display:none;
                                     width:200px;
                                     padding:5px;
@@ -292,7 +294,7 @@ section{
                                 #minus{
                                     top:17px;
                                     background:url(../img/more.png) no-repeat 3px -28px;
-                                }//数量的加号
+                                }//数量的减号
                             }
                            
                             span{
@@ -325,6 +327,7 @@ section{
                             margin:10px 10px 10px 0;
                             height:20px;
                             line-height:20px;
+                            margin:10px 0;
                             
                         }
                         .s1:nth-child(1){
@@ -340,6 +343,7 @@ section{
                     .add{
                         width:600px;
                         line-height:40px;
+                        margin-top:10px;
                         a:first-child{
                             display:inline-block;
                             width:110px;
@@ -362,7 +366,102 @@ section{
                             margin:0 15px;
                             background:$color;
                         }
+                        a:nth-child(3){
+                            padding-left:26px;
+                            height:40px;
+                            line-height:40px;
+                            font-size:14px;
+                            background:url(../img/icon_1.png) no-repeat 2px -60px;
+                            &:hover{
+                                color:$color;
+                                background:url(../img/icon_1.png) no-repeat 2px -80px;
+                            }
+                        }
+                    }//添加购物车结束
+                }//右边结束
+            }//上部结束
+            .detail-bottom{
+                width:1200px;
+                overflow:hidden;
+                margin-bottom:30px;
+                .bottom-left{
+                    width:220px;
+                    float:left;
+                    padding:10px;
+                    border:1px solid #ccc;
+                    li{
+                        width:210px;
+                        height:280px;
+                        padding:5px;
+                        border-bottom:1px solid #bbb;
+                        &:hover{
+                            color:$color;
+                        }
+                        img{
+                            width:210px;
+                            height:210px;
+                        }
+                        span{
+                            display:block;
+                            width:210px;
+                            height:40px;
+                            line-height:18px;
+                        }
+                        i{
+                            display:block;
+                            width:210px;
+                            height:30px;
+                            line-height:30px;
+                            color:$color;
+                            font-size:20px;
+                        }
                     }
+                }//左边结束
+                .bottom-right{
+                    width:945px;
+                    float:right;
+                    padding-bottom:30px;
+                    border:1px solid #ccc;
+                    ul{
+                        width:945px;
+                        height:30px;
+                        background:#eee;
+                        li{
+                            float:left;
+                            width:100px;
+                            line-height:30px;
+                            text-align:center;
+                            font-size:16px;
+                            font-weight:500;
+                            
+                        }
+                        .active{
+                            background:$color;
+                            color:#fff;
+                        }
+                    }
+                    dl{
+                        width:925px;
+                        overflow:hidden;
+                        line-height:40px;
+                        margin:5px 5px 5px 15px;
+                        dt{
+                            width:100px;
+                            height:40px;
+                            float:left;
+                        }
+                        dd{
+                            float:left;
+                        }
+                    }
+                    p{
+                        width:945px;
+                        text-align:center;
+                        img{
+                            vertical-align: top;
+                        }
+                    }
+                    
                 }
             }
         }

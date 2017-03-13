@@ -247,7 +247,11 @@ section {
         .section .good-list #glists1 ul li {
           float: left;
           width: 200px;
-          margin: 0 25px 0 10px; }
+          border: 2px solid #fff;
+          margin: 0 21px 0 10px;
+          transition: all 2s; }
+          .section .good-list #glists1 ul li:hover {
+            border: 2px solid #dc0f50; }
           .section .good-list #glists1 ul li .box {
             width: 200px;
             height: 200px;
@@ -273,6 +277,7 @@ section {
             font-size: 14px;
             line-height: 18px;
             color: #333;
+            text-overflow: ellipsis;
             display: block;
             overflow: hidden; }
           .section .good-list #glists1 ul li i {
@@ -300,7 +305,7 @@ section {
       .section .good-list #glists1 #prev1 {
         left: 0; }
       .section .good-list #glists1 #next1 {
-        right: 0; }
+        right: -2px; }
   .section .time-list {
     width: 1200px;
     height: 362px;
@@ -359,8 +364,12 @@ section {
         .section .time-list #glists2 ul li {
           float: left;
           width: 200px;
-          margin: 0 25px 0 10px;
-          position: relative; }
+          position: relative;
+          border: 2px solid #fff;
+          margin: 0 21px 0 10px;
+          transition: all 2s; }
+          .section .time-list #glists2 ul li:hover {
+            border: 2px solid #dc0f50; }
           .section .time-list #glists2 ul li .box {
             width: 200px;
             height: 200px;
@@ -427,7 +436,7 @@ section {
       .section .time-list #glists2 #prev2 {
         left: 0; }
       .section .time-list #glists2 #next2 {
-        right: 0; }
+        right: -2px; }
   .section .like-list {
     width: 1200px;
     height: 362px;
@@ -464,8 +473,12 @@ section {
         .section .like-list #glists3 ul li {
           float: left;
           width: 200px;
-          margin: 0 25px 0 10px;
-          position: relative; }
+          position: relative;
+          border: 2px solid #fff;
+          margin: 0 21px 0 10px;
+          transition: all 2s; }
+          .section .like-list #glists3 ul li:hover {
+            border: 2px solid #dc0f50; }
           .section .like-list #glists3 ul li .box {
             width: 200px;
             height: 200px;
@@ -512,7 +525,7 @@ section {
       .section .like-list #glists3 #prev3 {
         left: 0; }
       .section .like-list #glists3 #next3 {
-        right: 0; }
+        right: -2px; }
   .section .floor {
     width: 1200px;
     height: 556px;
@@ -564,14 +577,16 @@ section {
           margin-top: 5px; }
           .section .floor .floor-left .right .proimg a {
             display: block;
-            width: 190px;
-            height: 190px;
+            width: 186px;
+            height: 186px;
+            margin-right: 2px;
+            border: 2px solid #fff;
             float: left; }
             .section .floor .floor-left .right .proimg a img {
-              width: 190px;
-              height: 190px; }
+              width: 186px;
+              height: 186px; }
             .section .floor .floor-left .right .proimg a:hover {
-              border: 1px solid #DC0F50;
+              border: 2px solid #dc0f50;
               transition: all 2s; }
     .section .floor .floor-right {
       width: 300px;
@@ -587,10 +602,15 @@ section {
           width: 80px;
           height: 80px;
           margin-right: 15px;
-          position: relative; }
+          overflow: hidden;
+          position: relative;
+          margin-left: 0; }
           .section .floor .floor-right dl dt img {
             width: 80px;
-            height: 80px; }
+            height: 80px;
+            transition: all 2s; }
+            .section .floor .floor-right dl dt img:hover {
+              margin-left: 15px; }
           .section .floor .floor-right dl dt span {
             display: block;
             width: 24px;
@@ -613,6 +633,8 @@ section {
           .section .floor .floor-right dl dd em {
             display: block;
             font-size: 20px;
+            color: #dc0f50; }
+          .section .floor .floor-right dl dd:hover i {
             color: #dc0f50; }
 
 #fix {

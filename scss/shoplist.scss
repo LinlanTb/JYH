@@ -242,22 +242,27 @@ section{
                 width:940px;
                 overflow:hidden;
                 li{
-                    width:220px;
-                    height:314px;
+                    width:206px;
+                    height:304px;
                     float:left;
+                    padding:5px;
                     margin-bottom:25px;
+                    border:2px solid #fff;
                     margin-right:15px;
+                    &:hover{
+                        border:2px solid $color;
+                    }
                     a{
                         display:block;
                         img{
-                            width:214px;
-                            height:214px;
+                            width:204px;
+                            height:204px;
                         }
                         b{
                             padding: 5px 0;
                             overflow: hidden;
-                            height: 40px;
-                            line-height: 20px;
+                            height: 35px;
+                            line-height: 17px;
                             font-size: 14px;
                             color: #333;
                             display: block;
