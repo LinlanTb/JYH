@@ -46,16 +46,17 @@
 					<div class="hd">
 						<dl>
 							<dt>分类</dt>
-							<dd>
+							<dd id="classify">
 								<a href="###">全部</a>
 							</dd>
 							<span>更多</span>
 						</dl>
 						<dl>
 							<dt>品牌</dt>
-							<dd>
+							<dd id="brand">
 								<a href="###">全部</a>
 							</dd>
+							<span>更多</span>
 						</dl>
 					</div>
 					<!--商品过滤-->
@@ -83,18 +84,18 @@
 					<!--商品分页开始-->
 					<div class="pag">
 						<span id="PaginationTB">
-							<a class="curr paging" >
+							<a class="curr paging" href="#">
 							<span id="spprev">上一页</span>
 							</a>
 							<p id="page">
 							</p>
-							<a href="###" class="paging">
+							<a href="#" class="paging">
 							<span id="spnext">下一页</span>
 							</a>
 						</span>
 						<span id="PageSet">
-							<em>共<i id="count"></i> 到第<input id="txtPageCount" type="text" value="1"/>页</em>
-							<a style="cursor:pointer">确定</a>
+							<em>共<i id="count"></i> 到第<input id="txtPage" type="text" value="1"/>页</em>
+							<a href="#" id="sub">确定</a>
 							</span>
 					</div>
 				</div>
@@ -259,6 +260,7 @@
 		<footer></footer>
 	</body>
 	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/cookie.js"></script>
 	<script src="js/clickmove.js"></script>
 	<script src="js/shoplist.js"></script>
 </html>

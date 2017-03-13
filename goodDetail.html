@@ -44,24 +44,17 @@
 					<div class="show">
 						<div class="s-left">
 							<div class="bigimg">
-								<img src="img/goods/good12.jpg" />
+								<img src="" />
 								<div id="wrap"></div>
-								<div id="bbox">
-									<img src="img/goods/good12.jpg" />
-								</div>
-							</div>	
+								<div class="bigi">
+									<div id="bbox">
+										<img src="" />
+									</div>
+								</div>	
+							</div>
 							<div class="smallimg">
 								<div id="mbox">
 									<ul>
-										<li><img src="img/goods/good12.jpg"/></li>
-										<li><img src="img/goods/good14.jpg"/></li>
-										<li><img src="img/goods/good9.jpg"/></li>
-										<li><img src="img/goods/good13.jpg"/></li>
-										<li><img src="img/goods/good13.jpg"/></li>
-										<li><img src="img/goods/good13.jpg"/></li>
-										<li><img src="img/goods/good12.jpg"/></li>
-										<li><img src="img/goods/good14.jpg"/></li>
-										<li><img src="img/goods/good9.jpg"/></li>
 									</ul>
 								</div>
 								<span id="prev"></span>
@@ -73,8 +66,8 @@
 							<div class="g-list">
 								<dl>
 									<dd>
-										<b>￥456.00</b>
-										<i>￥652.00</i>
+										<b id="price_new">￥456.00</b>
+										<i id="price_old">￥652.00</i>
 										<a>直接进入店铺</a>
 									</dd>
 								</dl>
@@ -95,22 +88,14 @@
 								<dl>
 									<dt>尺码</dt>
 									<dd class="siz">
-										<ul>
-											<li><a>S</a></li>
-											<li><a>M</a></li>
-											<li><a>L</a></li>
-											<li><a>XL</a></li>
+										<ul id="size">
 										</ul>
 									</dd>
 								</dl>
 								<dl>
 									<dt>颜色</dt>
 									<dd class="col">
-										<ul>
-											<li><a>红</a></li>
-											<li><a>浅绿</a></li>
-											<li><a>淡黄</a></li>
-											<li><a>天蓝</a></li>
+										<ul id="colo">
 										</ul>
 									</dd>
 								</dl>
@@ -170,23 +155,13 @@
 							</ul>
 							<dl>
 								<dt>商品名称</dt>
-								<dd>朗圣洁生物活性固齿修复牙膏60g*5 赠20g*7、试用装20g*1</dd>
+								<dd id="name"></dd>
 							</dl>
 							<dl>
-								<dt>品牌名称</dt>
-								<dd>朗圣洁</dd>
+								<dt>商品产地</dt>
+								<dd id="producearea"></dd>
 							</dl>
-							<p>
-								<img src ="img/detail/lusjoy1.jpg"/>
-								<img src ="img/detail/lusjoy2.jpg"/>
-								<img src ="img/detail/lusjoy3.jpg"/>
-								<img src ="img/detail/lusjoy4.jpg"/>
-								<img src ="img/detail/lusjoy5.jpg"/>
-								<img src ="img/detail/lusjoy6.jpg"/>
-								<img src ="img/detail/lusjoy7.jpg"/>
-								<img src ="img/detail/lusjoy8.jpg"/>
-								<img src ="img/detail/lusjoy9.jpg"/>
-								<img src ="img/detail/lusjoy10.jpg"/>
+							<p id="listimg">
 							</p>
 						</div>
 					</div>
@@ -196,5 +171,6 @@
 		<footer></footer>
 	</body>
 	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/cookie.js"></script>
 	<script src="js/gooddetail.js"></script>
 </html>

@@ -47,6 +47,7 @@ section{
                 height:560px;
                 border:1px solid #ccc;
                 display:none;
+                z-index: 7777;
                 a{
                     display:block;
                     height:40px;
@@ -100,14 +101,7 @@ section{
                     height:400px;
                     border:1px solid #ccc;
                     position:relative;
-                    &:hover{
-                        #wrap{
-                            display:block;
-                        }
-                        #bbox{
-                            display:block;
-                        }
-                    }
+                    
                     img{
                         width:400px;
                         height:400px;
@@ -119,8 +113,9 @@ section{
                         background:rgba(0,0,0,0.6);
                         position:absolute;
                         top:0;left:0;
+                        cursor:move;
                     }
-                    #bbox{
+                    .bigi{
                         width:400px;
                         height:400px;
                         display:none;
@@ -129,10 +124,18 @@ section{
                         top:0;left:420px;
                         overflow:hidden;
                         background:#fff;z-index: 9999;
-                        img{
-                            width:800px;
-                            height:800px;
+                        #bbox{
+                            width:400px;
+                            height:400px;
+                            position:relative;
+                            img{
+                                position:absolute;
+                                left:0;top:0;
+                                width:800px;
+                                height:800px;
+                            }
                         }
+                        
                     }
                 }//大图片结束
                 //小图片开始
@@ -458,6 +461,7 @@ section{
                         width:945px;
                         text-align:center;
                         img{
+                            width:900px;
                             vertical-align: top;
                         }
                     }

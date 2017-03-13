@@ -71,7 +71,8 @@ section {
         width: 232px;
         height: 560px;
         border: 1px solid #ccc;
-        display: none; }
+        display: none;
+        z-index: 7777; }
         .section nav dt .list a {
           display: block;
           height: 40px;
@@ -114,10 +115,6 @@ section {
           height: 400px;
           border: 1px solid #ccc;
           position: relative; }
-          .section .details .show .s-left .bigimg:hover #wrap {
-            display: block; }
-          .section .details .show .s-left .bigimg:hover #bbox {
-            display: block; }
           .section .details .show .s-left .bigimg img {
             width: 400px;
             height: 400px; }
@@ -128,8 +125,9 @@ section {
             background: rgba(0, 0, 0, 0.6);
             position: absolute;
             top: 0;
-            left: 0; }
-          .section .details .show .s-left .bigimg #bbox {
+            left: 0;
+            cursor: move; }
+          .section .details .show .s-left .bigimg .bigi {
             width: 400px;
             height: 400px;
             display: none;
@@ -140,9 +138,16 @@ section {
             overflow: hidden;
             background: #fff;
             z-index: 9999; }
-            .section .details .show .s-left .bigimg #bbox img {
-              width: 800px;
-              height: 800px; }
+            .section .details .show .s-left .bigimg .bigi #bbox {
+              width: 400px;
+              height: 400px;
+              position: relative; }
+              .section .details .show .s-left .bigimg .bigi #bbox img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 800px;
+                height: 800px; }
         .section .details .show .s-left .smallimg {
           width: 400px;
           margin-top: 15px;
@@ -402,6 +407,7 @@ section {
           width: 945px;
           text-align: center; }
           .section .details .detail-bottom .bottom-right p img {
+            width: 900px;
             vertical-align: top; }
 
 /*# sourceMappingURL=gooddetail.css.map */
