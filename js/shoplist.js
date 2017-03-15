@@ -1,7 +1,6 @@
 $(function(){
 	$("header").load("top.html");
 	$("footer").load("footer.html");
-	var oUl3=MovePlay("#ul3","#next3","#prev3");
 	$(".filter li").on("click",function(){
 		$(".filter li:not(#on)").removeClass("curr");
 		$(this).addClass("curr");
@@ -23,20 +22,11 @@ $(function(){
 			}
 		}
 	});
-	
-	//用ajax加载页面中的信息
-//	$.get("json/listdetail.json",function(data){
-//		for(let x=0;x<12;x++){
-//				let oLi = "<li><a href='goodDetail.html'><img src='"+data[x].images+"'><b >"+data[x].word+"</b><p><i>"+data[x].price_new+"</i>"+data[x].price_old+"</p><font>月销"+data[x].msell+"件</font></a></li>";
-//				$("#goodshow").append(oLi);
-//				$("#page a").removeClass("curr");
-//				$(this).addClass("curr");
-//		}
-//		//分页
-//	},"json");
-	
+
 	//制作分页
-	$.get("json/listdetail.json",function(data){
+	$.get("php/shoplist.php",function(data){
+		console.log(typeof data);
+		data = eval(data);
 		PageSet(0);
 		//加载ajax
 		function PageSet(n){
@@ -44,7 +34,7 @@ $(function(){
 			let _end = (n+1)*12<data.length?(n+1)*12:data.length;
 			$("#goodshow").html("");
 			for(let i=_start;i<_end;i++){
-				let oLi = "<li><a href='goodDetail.html'><img src='"+data[i].images+"'><b >"+data[i].word+"</b><p><i>"+data[i].price_old+"</i>"+data[i].price_new+"</p><font>月销"+data[i].msell+"件</font></a></li>";
+				let oLi = "<li><a href='goodDetail.html'><img src='"+data[i].goodsImg1+"'><b >"+data[i].goodsDesc+"</b><p><i>￥"+data[i].goodsOldPrice+"</i>￥"+data[i].goodsPrice+"</p><font>月销"+data[i].monSell+"件</font></a></li>";
 				$("#goodshow").append(oLi);
 				$("#page a").removeClass("curr");
 				$("#page a").eq(n).addClass("curr");
@@ -52,7 +42,7 @@ $(function(){
 			//点击li
 			$("#goodshow li").on("click",function(){
 				let index = $("#goodshow li").index(this);
-				saveCookie("goods",data[_start+index].data_id,1);
+				saveCookie("goods",data[_start+index].goodsId,1);
 				console.log(data[index].data_id);
 			});
 		}
@@ -94,5 +84,18 @@ $(function(){
 			PageSet(ind-1);
 			m=ind;
 		});
+	});
+	
+	//猜你喜欢
+	$.get("json/goods.json",function(data){
+		for(let x in data){
+			if(data[x].classify=="cnxh"){
+				for(let k=0;k<data[x].goods.length;k++){
+					let oLi = "<li><a href='goodDetail.html'><div class='box'><img src='"+data[x].goods[k].img+"'  /></div><span>"+data[x].goods[k].describe+"</span><i>"+data[x].goods[k].price+"<em>"+data[x].goods[k].oldpri+"</em></i></a></li>";
+					$("#rec_goodpos").append(oLi);
+				}
+			}
+		}
+		var oUl3=MovePlay("#ul3","#next3","#prev3");
 	},"json");
 });

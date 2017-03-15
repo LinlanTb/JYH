@@ -44,7 +44,7 @@
 					<div class="show">
 						<div class="s-left">
 							<div class="bigimg">
-								<img src="" />
+								<img src="" id = "cimg"/>
 								<div id="wrap"></div>
 								<div class="bigi">
 									<div id="bbox">
@@ -62,12 +62,12 @@
 							</div>
 						</div>
 						<div class="s-right">
-							<h3>布医坊温灸消痛健康组（消痛贴*10盒+发热帖*60片）</h3>
+							<h3 id="describe"></h3>
 							<div class="g-list">
 								<dl>
 									<dd>
-										<b id="price_new">￥456.00</b>
-										<i id="price_old">￥652.00</i>
+										<b id="price_new"><span>￥</span><em></em></b>
+										<i id="price_old"><span>￥</span><em></em></i>
 										<a>直接进入店铺</a>
 									</dd>
 								</dl>
@@ -117,8 +117,8 @@
 										<span class="s1">支持7日无理由退货</span>
 								</p>
 								<div class="add">
-									<a href="###">加入购物车</a>
-									<a href="###">立即购买</a>
+									<a href="###" id="addcart">加入购物车</a>
+									<a href="shopcart.html">立即购买</a>
 									<a href="###">收藏商品</a>
 								</div>
 							</div>
@@ -158,8 +158,8 @@
 								<dd id="name"></dd>
 							</dl>
 							<dl>
-								<dt>商品产地</dt>
-								<dd id="producearea"></dd>
+								<dt>商品编号</dt>
+								<dd id="goodId"></dd>
 							</dl>
 							<p id="listimg">
 							</p>
@@ -170,7 +170,8 @@
 		</section>
 		<footer></footer>
 	</body>
-	<script src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/cookie.js"></script>
-	<script src="js/gooddetail.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/gooddetail.js"></script>
 </html>

@@ -61,6 +61,25 @@ input, textarea, select, button {
   #top div {
     width: 1090px;
     float: right; }
+    #top div #userno {
+      width: 200px;
+      height: 30px;
+      float: right;
+      text-align: center; }
+      #top div #userno span {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 10px;
+        background-image: none; }
+    #top div #useron {
+      width: 150px;
+      display: none;
+      text-align: center;
+      color: #dc0f50;
+      line-height: 30px;
+      float: right; }
+    #top div #quit {
+      display: none; }
     #top div span {
       cursor: pointer;
       display: block;
@@ -71,14 +90,14 @@ input, textarea, select, button {
         color: #666; }
         #top div span a:hover {
           text-decoration: underline; }
-    #top div span:nth-child(1) {
+    #top div #weixin {
       padding: 0 20px;
       background: url(../img/wx.png) no-repeat left center;
       padding-right: 0px;
       position: relative; }
-      #top div span:nth-child(1):hover label {
+      #top div #weixin:hover label {
         display: block; }
-      #top div span:nth-child(1) label {
+      #top div #weixin label {
         cursor: pointer;
         display: none;
         z-index: 666;
@@ -89,7 +108,7 @@ input, textarea, select, button {
         left: -60px;
         top: 30px;
         border: 1px solid #ccc; }
-        #top div span:nth-child(1) label i {
+        #top div #weixin label i {
           position: absolute;
           display: block;
           width: 20px;
@@ -98,22 +117,22 @@ input, textarea, select, button {
           top: -23px;
           border: none;
           background: url(../img/ware_list.png) center no-repeat; }
-        #top div span:nth-child(1) label img {
+        #top div #weixin label img {
           width: 100px;
           height: 100px;
           margin: 10px 10px 0; }
-        #top div span:nth-child(1) label span {
+        #top div #weixin label span {
           width: 100px;
           line-height: 20px;
           text-align: center;
           color: #666; }
-    #top div span:nth-child(2) {
+    #top div #phone {
       padding: 0 20px;
       background: url(../img/iphone.png) no-repeat 6px center;
       position: relative; }
-      #top div span:nth-child(2):hover label {
+      #top div #phone:hover label {
         display: block; }
-      #top div span:nth-child(2) label {
+      #top div #phone label {
         cursor: pointer;
         display: none;
         z-index: 666;
@@ -123,7 +142,7 @@ input, textarea, select, button {
         left: -60px;
         top: 30px;
         border: 1px solid #ccc; }
-        #top div span:nth-child(2) label i {
+        #top div #phone label i {
           position: absolute;
           display: block;
           width: 20px;
@@ -132,11 +151,11 @@ input, textarea, select, button {
           top: -23px;
           border: none;
           background: url(../img/ware_list.png) center no-repeat; }
-        #top div span:nth-child(2) label img {
+        #top div #phone label img {
           width: 100px;
           height: 100px;
           margin: 10px 10px 0; }
-        #top div span:nth-child(2) label span {
+        #top div #phone label span {
           width: 100px;
           line-height: 20px;
           text-align: center;

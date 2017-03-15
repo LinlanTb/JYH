@@ -32,7 +32,7 @@ function regist(pho,pic,pwd1,pwd2,yzm,chek,tijiao){
 	});
 	//验证码确认
 	$(pic).blur(function(){
-//		console.log(random);
+//		console.log(arr[random]);
 		
 		if($(pic).val()){
 			if($(pic).val().toUpperCase()==arr[random]){
@@ -41,7 +41,7 @@ function regist(pho,pic,pwd1,pwd2,yzm,chek,tijiao){
 			}else{
 				$(pic+" + span").css({"display":"block"});
 				$(pic+" + span").html("验证码错误，请重新输入");
-				fpic=1;
+				fpic=0;
 			}
 		}else{
 			$(pic+" + span").css({"display":"block"});
@@ -117,15 +117,23 @@ function regist(pho,pic,pwd1,pwd2,yzm,chek,tijiao){
 	
 	$(tijiao).click(function(){
 		if(fpho&&fpic&&fpwd1&&fpwd2&&fyzm){
-			$.post("php/register.php",{
+			$.get("php/register.php",{
 					"userPhone":$(pho).val(),
 					"userPass":$(pwd1).val()
 				},
-				function(date){
-					if(date =="1"){
-						alert("用户名已经注册，请直接登录");
-					}else if(date =="0"){
+				function(data){
+					console.log(data)
+					if(data.indexOf("1")>-1){
+						$(pho+" + span").css({"display":"block"});
+						$(pho+" + span").html("账号已注册，请直接登录");
+					}else if(data.indexOf("0")>-1){
+						$(pho+" + span").css({"display":"none"});
 						location="tiaozhuan.html";
+						var cart = {
+							userPhone:$(pho).val(),
+							userPass:$(pwd1).val()
+						}
+						saveCookie("user",JSON.stringify(cart),1);
 					}
 					
 				}

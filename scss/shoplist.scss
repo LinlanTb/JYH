@@ -261,8 +261,8 @@ section{
                         b{
                             padding: 5px 0;
                             overflow: hidden;
-                            height: 35px;
-                            line-height: 17px;
+                            height: 34px;
+                            line-height: 18px;
                             font-size: 14px;
                             color: #333;
                             display: block;
@@ -356,6 +356,11 @@ section{
                     img{
                         width:80px;
                         height:80px;
+                        transition: all 1s;
+                        &:hover{
+                            margin-left:15px;
+                            margin-top:8px;
+                        }
                     }
                     span{
                         display:block;
@@ -365,7 +370,7 @@ section{
                         padding:3px 5px;line-height:12px;
                         background:url(../img/biao_bg.png) no-repeat 0 0;
                         position:absolute;
-                        top:10px;
+                        top:0;
                         left:0;
                     }
                 }

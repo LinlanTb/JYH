@@ -251,8 +251,8 @@ section {
             .section .allgoods .show ul li a b {
               padding: 5px 0;
               overflow: hidden;
-              height: 35px;
-              line-height: 17px;
+              height: 34px;
+              line-height: 18px;
               font-size: 14px;
               color: #333;
               display: block; }
@@ -326,7 +326,11 @@ section {
         position: relative; }
         .section .selling dl dt img {
           width: 80px;
-          height: 80px; }
+          height: 80px;
+          transition: all 1s; }
+          .section .selling dl dt img:hover {
+            margin-left: 15px;
+            margin-top: 8px; }
         .section .selling dl dt span {
           display: block;
           width: 24px;
@@ -336,7 +340,7 @@ section {
           line-height: 12px;
           background: url(../img/biao_bg.png) no-repeat 0 0;
           position: absolute;
-          top: 10px;
+          top: 0;
           left: 0; }
       .section .selling dl dd {
         float: left;

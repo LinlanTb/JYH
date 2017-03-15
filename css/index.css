@@ -122,6 +122,39 @@ section {
         width: 230px;
         height: 324px;
         border: 1px solid #bbb; }
+        .section .banner .login .perlist .user {
+          width: 230px;
+          height: 180px;
+          display: none;
+          border-bottom: 1px solid #bbb;
+          text-align: center; }
+          .section .banner .login .perlist .user .user-top {
+            width: 230px;
+            height: 90px;
+            padding-top: 20px;
+            background: #dc0f50;
+            text-align: center; }
+            .section .banner .login .perlist .user .user-top img {
+              width: 50px;
+              height: 50px;
+              border-radius: 100%; }
+            .section .banner .login .perlist .user .user-top p {
+              line-height: 30px;
+              color: #fff; }
+          .section .banner .login .perlist .user ul {
+            width: 230px;
+            overflow: hidden; }
+            .section .banner .login .perlist .user ul li {
+              width: 76px;
+              float: left;
+              height: 70px;
+              text-align: center; }
+              .section .banner .login .perlist .user ul li p {
+                background: #ffe;
+                line-height: 30px; }
+            .section .banner .login .perlist .user ul li:nth-child(2) {
+              border-left: 1px solid #eee;
+              border-right: 1px solid #eee; }
         .section .banner .login .perlist .hd {
           width: 200px;
           height: 150px;
@@ -215,12 +248,12 @@ section {
     width: 1200px;
     height: 362px;
     margin-bottom: 30px; }
-    .section .good-list .hd {
+    .section .good-list .head {
       width: 1200px;
       height: 32px;
       margin-bottom: 30px;
       position: relative; }
-      .section .good-list .hd h2 {
+      .section .good-list .head h2 {
         position: absolute;
         left: 0;
         height: 26px;
@@ -228,7 +261,7 @@ section {
         background: #fff;
         font-size: 24px;
         color: #333; }
-      .section .good-list .hd .line {
+      .section .good-list .head .line {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid #ccc; }
@@ -311,12 +344,12 @@ section {
     height: 362px;
     margin-bottom: 30px;
     position: relative; }
-    .section .time-list .hd {
+    .section .time-list .head {
       width: 1200px;
       height: 32px;
       margin-bottom: 30px;
       position: relative; }
-      .section .time-list .hd h2 {
+      .section .time-list .head h2 {
         position: absolute;
         left: 0;
         height: 26px;
@@ -324,15 +357,15 @@ section {
         background: #fff;
         font-size: 24px;
         color: #333; }
-        .section .time-list .hd h2 span {
+        .section .time-list .head h2 span {
           font-size: 14px;
           font-weight: 400; }
-          .section .time-list .hd h2 span i {
+          .section .time-list .head h2 span i {
             padding: 3px 5px;
             background: rgba(0, 0, 0, 0.8);
             color: #fff;
             margin: 0 3px; }
-      .section .time-list .hd .line {
+      .section .time-list .head .line {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid #ccc; }
@@ -441,12 +474,12 @@ section {
     width: 1200px;
     height: 362px;
     margin-bottom: 30px; }
-    .section .like-list .hd {
+    .section .like-list .head {
       width: 1200px;
       height: 32px;
       margin-bottom: 30px;
       position: relative; }
-      .section .like-list .hd h2 {
+      .section .like-list .head h2 {
         position: absolute;
         left: 0;
         height: 26px;
@@ -454,7 +487,7 @@ section {
         background: #fff;
         font-size: 24px;
         color: #333; }
-      .section .like-list .hd .line {
+      .section .like-list .head .line {
         width: 100%;
         height: 30px;
         border-bottom: 1px solid #ccc; }

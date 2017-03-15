@@ -11,14 +11,14 @@
 				<div id="top">
 					<p><a href="###">收藏</a></p>
 					<div>
-						<span><a href="###">微信版
+						<span id="phone"><a href="###">微信版
 							<label>
 								<i></i>
 								<img src="img/ewm011.jpg"  />
 								<span>惠家有微信</span>
 							</label>
 						</a></span>
-						<span><a href="###">手机版
+						<span id="weixin"><a href="###">手机版
 							<label>
 								<i></i>
 								<img src="img/ewm022.jpg"  />
@@ -31,8 +31,12 @@
 						<span><a href="###">我的家有</a></span>
 						<span>购物车<a href="###">0</a>件</span>
 						<i></i>
-						<span><a href="register.html">免费注册</a></span>
-						<span><a href="login.html">请登录</a></span>
+						<span id="quit"><a href="#">退出</a></span>
+						<p id="useron"></p>
+						<p id="userno">
+							<span><a href="register.html">免费注册</a></span>
+							<span><a href="login.html">请登录</a></span>
+						</p>
 						<span><a href="index.html">首页</a></span>
 					</div>
 				</div>
@@ -59,7 +63,7 @@
 						</p>
 					</div>
 					<div class="cart">
-						<a href="shopcart.html"><span>我的购物车</span></a>
+						<a href="###" id="myc" ><span>我的购物车</span></a>
 						<i id="number">0</i>
 					</div>
 				</div>
@@ -69,9 +73,5 @@
 	</body>
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 	<script type="text/javascript" src="js/cookie.js" ></script>
-	<script>
-		$(function(){
-			$("#number").html(getCookie("goodnum"));
-		})
-	</script>
+	<script src="js/top.js"></script>
 </html>

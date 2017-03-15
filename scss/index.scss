@@ -112,6 +112,47 @@ section{
                 width:230px;
                 height:324px;
                 border:1px solid #bbb;
+                .user{
+                    width:230px;
+                    height:180px;
+                    display:none;
+                    border-bottom:1px solid #bbb;
+                    text-align:center;
+                    .user-top{
+                        width:230px;
+                        height:90px;
+                        padding-top:20px;
+                        background:$color;
+                        text-align:center;
+                        img{
+                            width:50px;
+                            height:50px;
+                            border-radius:100%;
+                        }
+                        p{
+                            line-height:30px;
+                            color:#fff;
+                        }
+                    }
+                    ul{
+                        width:230px;
+                        overflow:hidden;
+                        li{
+                            width:76px;
+                            float:left;
+                            height:70px;
+                            text-align: center;
+                            p{
+                                background:#ffe;
+                                line-height:30px;
+                            }
+                        }
+                        li:nth-child(2){
+                            border-left: 1px solid #eee;
+                            border-right: 1px solid #eee;
+                        }
+                    }
+                }
                 .hd{
                     width:200px;
                     height:150px;
@@ -230,7 +271,7 @@ section{
         height:362px;
         margin-bottom:30px;
         //标题
-        .hd{
+        .head{
             width:$width;
             height:32px;
             margin-bottom:30px;
@@ -349,7 +390,7 @@ section{
         margin-bottom:30px;
         position:relative;
         //标题
-        .hd{
+        .head{
             width:$width;
             height:32px;
             margin-bottom:30px;
@@ -507,7 +548,7 @@ section{
         height:362px;
         margin-bottom:30px;
         //标题
-        .hd{
+        .head{
             width:$width;
             height:32px;
             margin-bottom:30px;
